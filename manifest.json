@@ -1,0 +1,21 @@
+{
+    "name": "よね/Yone Musics",
+    "short_name": "Yone-Musics",
+    "scope": "/",
+    "start_url": "/index.html",
+    "background_color": "#ffffff",
+    "display": "standalone",
+    "theme_color": "#40e040",
+    "description": "",
+    "icons": [
+        {
+            "src": "https://cdn.yoneyo.com/images/yone_logos/yone_icon.png",
+            "type": "image/png",
+            "sizes": "1200x1200"
+        }
+    ],
+    "permissions": [
+        "https://musics.yoneyo.com/*",
+        "downloads"
+    ]
+}

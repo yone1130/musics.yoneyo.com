@@ -1,0 +1,550 @@
+<!--
+
+    index.html | license | Yone Musics Website
+
+    (c) よね/Yone
+
+    No modification or reproduction of any kind is permitted.
+    改変や複製を一切禁じます。
+
+-->
+<!DOCTYPE html>
+<html lang="ja-JP">
+
+<head prefix="og: https://ogp.me/ns#">
+    <!-- Meta -->
+    <meta charset="UTF-8">
+    <title>よね/Yone Musics</title>
+    <meta name="description" content="よね/Yone の楽曲利用ライセンスをご確認いただけます。">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- OGP -->
+    <meta property="og:url" content="https://musics.yoneyo.com/">
+    <meta property="og:type" content="website">
+    <meta property="og:site_name" content="よね/Yone Musics">
+    <meta property="og:title" content="楽曲利用ライセンス">
+    <meta property="og:description" content="よね/Yone の楽曲利用ライセンスをご確認いただけます。">
+    <meta property="og:image" content="https://musics.yoneyo.com/images/icon.png">
+
+    <!-- Base -->
+    <base href="https://musics.yoneyo.com/">
+
+    <!-- Manifest -->
+    <link rel="manifest" href="./manifest.json">
+
+    <!-- Styles -->
+    <link rel="stylesheet" href="./styles/style.css">
+
+    <style>
+        #langNotice {
+            margin: 2rem;
+            background-color: #ff6060ff;
+            border-radius: 1rem;
+            padding: 1rem 2rem;
+            color: #ffffffff;
+        }
+
+        #main {
+            padding: 1rem 10vw;
+
+        }
+
+        #pageTitle {
+            margin: 3em 0;
+            font-size: 1.2rem;
+            text-align: center;
+        }
+
+        #body h3 {
+            display: flex;
+            margin: 1em 0;
+        }
+
+        #body h3::before {
+            display: block;
+            width: 4px;
+            height: auto;
+            margin-right: 0.5em;
+            background-color: #808080ff;
+            content: "";
+        }
+
+        #body>li {
+            margin-bottom: 3rem;
+            list-style: none;
+        }
+
+        #body>li li {
+            margin-top: 1rem;
+            margin-bottom: 1rem;
+            margin-left: 2rem;
+        }
+
+        .block-line {
+            display: inline-block;
+            margin-top: 1em;
+            margin-bottom: 1em;
+            width: fit-content;
+            border: 1px solid #808080ff;
+            padding: 1rem 3rem;
+        }
+    </style>
+
+    <!-- Scripts -->
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"
+        integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+
+    <script>
+        const pageTitleLangs = {
+            "ja-JP": "楽曲利用ライセンス | よね/Yone Musics",
+            "en-US": "License to Use Yone Musics | Yone Musics",
+            "ko-KR": "음악 이용 라이센스 | 요네/Yone Musics"
+        }
+    </script>
+
+    <script src="./scripts/script.mjs" type="module"></script>
+</head>
+
+<body class="ja-jp">
+    <header></header>
+
+    <main>
+        <section id="main">
+            <div id="langNotice" class="en-us ko-kr">
+                <p class="en-us">This page has not yet been translated.</p>
+                <p class="ko-kr">이 페이지는 아직 번역되지 않았습니다.</p>
+            </div>
+
+            <h2 id="pageTitle">
+                <span class="ja-jp">よね/Yone 楽曲利用ライセンス</span>
+                <span class="en-us">License to Use Yone Musics</span>
+                <span class="ko-kr">요네/Yone 음악 이용 라이센스</span>
+            </h2>
+
+            <ol id="body" class="ja-jp">
+                <li>
+                    <h3>
+                        <span class="ja-jp">1. 概要</span>
+                        <span class="en-us">1. Overview</span>
+                    </h3>
+                    <p>
+                        <span class="ja-jp">
+                            この「よね/Yone 楽曲利用ライセンス」は、よね/Yone が制作、提供、配布する楽曲の利用条件を、当楽曲を利用されるすべての方との間で定めるものです。
+                        </span>
+                    </p>
+                </li>
+
+                <li>
+                    <h3>
+                        <span class="ja-jp">2. 用語の定義</span>
+                        <span class="en-us">2. Definition of Terms</span>
+                    </h3>
+
+                    <ol>
+                        <li>
+                            <h4>
+                                <span class="ja-jp">「本ライセンス」</span>
+                            </h4>
+
+                            <p>
+                                <span class="ja-jp">
+                                    本ライセンスとは、この「よね/Yone 楽曲利用ライセンス」を指します。
+                                </span>
+                            </p>
+                        </li>
+
+                        <li>
+                            <h4>
+                                <span class="ja-jp">「当楽曲」</span>
+                            </h4>
+
+                            <p>
+                                <span class="ja-jp">
+                                    当楽曲とは、当方が作詞作曲し、提供、配布するすべて楽曲を指します。
+                                </span>
+                            </p>
+                        </li>
+
+                        <li>
+                            <h4>
+                                <span class="ja-jp">「当方」</span>
+                            </h4>
+
+                            <p>
+                                <span class="ja-jp">
+                                    当方とは、本ウェブサイト、及び当楽曲を提供する「よね/Yone」を指します。
+                                </span>
+                            </p>
+                        </li>
+
+                        <li>
+                            <h4>
+                                <span class="ja-jp">「ユーザー」</span>
+                            </h4>
+
+                            <p>
+                                <span class="ja-jp">
+                                    ユーザーとは、本ウェブサイト、及び当楽曲を利用するすべての方を指します。
+                                </span>
+                            </p>
+                        </li>
+
+                        <li>
+                            <h4>
+                                <span class="ja-jp">「本ウェブサイト」</span>
+                            </h4>
+
+                            <p>
+                                <span class="ja-jp">
+                                    本ウェブサイトとは、当方が提供するこのウェブサイトを指します。
+                                </span>
+                            </p>
+                        </li>
+                    </ol>
+                </li>
+
+                <li>
+                    <h3>
+                        <span class="ja-jp">3. 本ライセンスの適用範囲</span>
+                        <span class="en-us">3. Scope of this License</span>
+                    </h3>
+
+                    <ol>
+                        <li>
+                            <p>
+                                <span class="ja-jp">
+                                    ユーザーは、当楽曲を利用するには本ライセンスに同意し、その定めに従わなければなりません。
+                                </span>
+                            </p>
+                        </li>
+
+                        <li>
+                            <p>
+                                <span class="ja-jp">
+                                    本ライセンスは、本ウェブサイトにて当楽曲をダウンロードし、利用した時点で適用されるものとします。
+                                </span>
+                            </p>
+                        </li>
+                    </ol>
+                </li>
+
+                <li>
+                    <h3>
+                        <span class="ja-jp">4. 利用規則</span>
+                        <span class="en-us">4. Terms of use</span>
+                    </h3>
+
+                    <ol>
+                        <li>
+                            <p>
+                                <span class="ja-jp">
+                                    各楽曲のページに追加利用条件の記載がありますので、必ずご確認ください。
+                                </span>
+                            </p>
+                        </li>
+
+                        <li>
+                            <p>
+                                <span class="ja-jp">
+                                    各楽曲の追加利用条件に明記されていない限り、UGCサービス上（YouTube、ニコニコ動画、X
+                                    (Twitter)、他無料動画投稿サービスなど）で背景音楽（BGM）として利用できます。
+                                </span>
+                            </p>
+                        </li>
+
+                        <li>
+                            <p>
+                                <span class="ja-jp">
+                                    各楽曲の追加利用条件に明記されていない限り、利用に際して当方に連絡する必要はありません。
+                                </span>
+                            </p>
+                        </li>
+
+                        <li>
+                            <p>
+                                <span class="ja-jp">
+                                    各楽曲の追加利用条件に明記されていない限り、営利（商用）・非営利、また個人・法人を問わず利用できます。<br>
+                                </span>
+                            </p>
+                        </li>
+
+                        <li>
+                            <p>
+                                <span class="ja-jp">
+                                    当楽曲を主たるメインコンテンツとして配信することはできません。<br>
+                                    背景音楽（BGM）としてご利用ください。<br>
+                                    例としてオンライン動画配信サービス等で「音楽メドレー」、「○○分耐久」、「音楽紹介」などといったものや、ライブコンサート等での利用はできません。<br>
+                                    メインコンテンツとして利用したい場合はお問い合わせください。
+                                </span>
+                            </p>
+                        </li>
+
+                        <li>
+                            <p>
+                                <span class="ja-jp">
+                                    すべての当楽曲において、クレジット表記が必須です。<br>
+                                    記載方法については 5. クレジット表記の方法 をご確認ください。<br>
+                                    表記ができないものに利用したい場合はお問い合わせください。
+                                </span>
+                            </p>
+                        </li>
+
+                        <li>
+                            <p>
+                                <span class="ja-jp">
+                                    当楽曲を原曲として利用し、ユーザーがカバー、アレンジを行って制作した曲は UGCサービス上 に限り配信可能です。<br>
+                                    UGCサービス以外で配信、販売したい場合はお問い合わせください。
+                                </span>
+                            </p>
+                        </li>
+
+                        <li>
+                            <p>
+                                <span class="ja-jp">
+                                    当楽曲では、利用が可能なものについて「フリー楽曲（音楽）」「フリーBGM」などの記載をすることがありますが、本ライセンスの範囲で自由に利用ができるという意味であり、著作権フリーを表すものではありません。<br>
+                                </span>
+                            </p>
+                        </li>
+                    </ol>
+                </li>
+
+                <li>
+                    <h3>
+                        <span class="ja-jp">5. クレジット表記の方法</span>
+                        <span class="en-us">5. How to display the copyright (credits)</span>
+                    </h3>
+
+                    <ol>
+                        <li>
+                            <h4>
+                                <span class="ja-jp">
+                                    表記方法
+                                </span>
+                            </h4>
+
+                            <ol>
+                                <li>
+                                    <p>
+                                        <span class="ja-jp">
+                                            【必須】以下の著作権を表記してください。
+                                        </span>
+                                    </p>
+
+                                    <span class="block-line">
+                                        &copy; &copysr; よね/Yone
+                                    </span>
+                                </li>
+
+                                <li>
+                                    <p>
+                                        <span class="ja-jp">
+                                            【必須】利用する楽曲名を表記してください。
+                                        </span>
+                                    </p>
+                                </li>
+
+                                <li>
+                                    <p>
+                                        <span class="ja-jp">
+                                            【任意】利用する楽曲の、本ウェブサイト上のURLリンクを表記してください。
+                                        </span>
+                                    </p>
+                                </li>
+                            </ol>
+                        </li>
+
+                        <li>
+                            <h4>
+                                <span class="ja-jp">
+                                    YouTube概要欄等での表記例
+                                </span>
+                            </h4>
+
+                            <p>
+                                <span class="ja-jp block-line">
+                                    ■ 使用BGM<br>
+                                    よね/Yone - (楽曲名)<br>
+                                    https://musics.yoneyo.com/releases/(利用する楽曲のURL)/<br>
+                                    &copy; &copysr; よね/Yone
+                                </span>
+                            </p>
+                        </li>
+                    </ol>
+                </li>
+
+                <li>
+                    <h3>
+                        <span class="ja-jp">6. 禁止事項</span>
+                        <span class="en-us">6. Prohibitions</span>
+                    </h3>
+
+                    <ol>
+                        <li>
+                            <p>
+                                <span class="ja-jp">
+                                    当方は、ユーザーが当楽曲を利用するにあたって、以下の事項を禁止とします。<br>
+                                    ユーザーが以下の行為を行った場合、当方は当該ユーザーに対して本ライセンスの取り消しを行うことができるものとし、公開停止、収益化の停止など、利用停止の措置を講じることができるものとします。
+                                </span>
+                            </p>
+
+                            <ol>
+                                <li>
+                                    <p>
+                                        <span class="ja-jp">
+                                            法令、裁判所の判決、もしくは命令、又は法令上拘束力のある行政措置に反する行為
+                                        </span>
+                                    </p>
+                                </li>
+
+                                <li>
+                                    <p>
+                                        <span class="ja-jp">
+                                            公の秩序，又は善良の風俗に反する行為
+                                        </span>
+                                    </p>
+                                </li>
+
+                                <li>
+                                    <p>
+                                        <span class="ja-jp">
+                                            当方、及び第三者の著作権、商標権、特許権等の知的財産権、名誉権、プライバシー権，肖像権，人格権，もしくはその他法令上，又は契約上の権利を侵害する行為
+                                        </span>
+                                    </p>
+                                </li>
+
+                                <li>
+                                    <p>
+                                        <span class="ja-jp">
+                                            各楽曲の追加利用条件に反する行為
+                                        </span>
+                                    </p>
+                                </li>
+
+                                <li>
+                                    <p>
+                                        <span class="ja-jp">
+                                            適切なクレジット表記がされていない利用<br>
+                                            表記がない場合でもある程度の許容はしますが、原則禁止とします。
+                                        </span>
+                                    </p>
+                                </li>
+
+                                <li>
+                                    <p>
+                                        <span class="ja-jp">
+                                            当楽曲をJASRAC等の著作権管理団体に登録する行為
+                                        </span>
+                                    </p>
+                                </li>
+
+                                <li>
+                                    <p>
+                                        <span class="ja-jp">
+                                            当楽曲をYouTube Content IDに登録する行為<br>
+                                            当楽曲には、すでにYouTube Content IDに登録されているものもあります。
+                                        </span>
+                                    </p>
+                                </li>
+
+                                <li>
+                                    <p>
+                                        <span class="ja-jp">
+                                            当楽曲を原曲として利用し、ユーザーがカバー、アレンジ行って制作した曲を、UGCサービス以外で配信、販売する行為
+                                        </span>
+                                    </p>
+                                </li>
+
+                                <li>
+                                    <p>
+                                        <span class="ja-jp">
+                                            当楽曲を自らの著作物として主張する行為
+                                        </span>
+                                    </p>
+                                </li>
+                            </ol>
+                        </li>
+                    </ol>
+                </li>
+
+                <li>
+                    <h3>
+                        <span class="ja-jp">7. 免責事項</span>
+                        <span class="en-us">7. Disclaimer</span>
+                    </h3>
+
+                    <ol>
+                        <li>
+                            <p>
+                                <span class="ja-jp">
+                                    当方は、当楽曲の利用によってユーザーに生じた損害の責任は一切負わないものとします。
+                                </span>
+                            </p>
+                        </li>
+
+                        <li>
+                            <p>
+                                <span class="ja-jp">
+                                    当方は、ユーザーに事前に通知することなく、本ウェブサイトや、当楽曲の提供、配布等の内容を変更または停止できるものとし、それに伴うユーザーへの損害の責任は一切負わないものとします。
+                                </span>
+                            </p>
+                        </li>
+                    </ol>
+                </li>
+
+                <li>
+                    <h3>
+                        <span class="ja-jp">8. 本ライセンスの変更</span>
+                        <span class="en-us">8. Modification of this License</span>
+                    </h3>
+
+                    <ol>
+                        <li>
+                            <p>
+                                <span class="ja-jp">
+                                    当方は、ユーザーに個別の同意を得ることなく、本ライセンスを変更することができるものとします。
+                                </span>
+                            </p>
+                        </li>
+
+                        <li>
+                            <p>
+                                <span class="ja-jp">
+                                    変更後にダウンロードした楽曲については、変更後の本ライセンスが適用されるものとします。
+                                </span>
+                            </p>
+                        </li>
+                    </ol>
+                </li>
+
+                <li>
+                    <h3>
+                        <span class="ja-jp">9. 準拠法、裁判管轄</span>
+                        <span class="en-us">9. Applicable law and jurisdiction</span>
+                    </h3>
+
+                    <ol>
+                        <li>
+                            <p>
+                                <span class="ja-jp">
+                                    本ライセンスの正文は日本語とし、日本法において解釈されるものとします。
+                                </span>
+                            </p>
+                        </li>
+
+                        <li>
+                            <p>
+                                <span class="ja-jp">
+                                    本ウェブサイト、及び当楽曲を利用したことに起因する、ユーザーと当方との間に生じた一切の紛争については、東京地方裁判所、又は東京簡易裁判所を第一審の専属的合意管轄裁判所とします。
+                                </span>
+                            </p>
+                        </li>
+                    </ol>
+                </li>
+            </ol>
+        </section>
+    </main>
+
+    <footer></footer>
+</body>
+
+</html>

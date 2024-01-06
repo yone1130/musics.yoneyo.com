@@ -1,0 +1,104 @@
+<!--
+
+    404.html | Yone Musics Website
+
+    (c) よね/Yone
+
+    No modification or reproduction of any kind is permitted.
+    改変や複製を一切禁じます。
+
+-->
+<!DOCTYPE html>
+<html lang="ja-JP">
+
+<head prefix="og: https://ogp.me/ns#">
+    <!-- Meta -->
+    <meta charset="UTF-8">
+    <title>よね/Yone Musics</title>
+    <meta name="description" content="よね/Yone の楽曲サイトです。">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- OGP -->
+    <meta property="og:url" content="https://musics.yoneyo.com/">
+    <meta property="og:type" content="website">
+    <meta property="og:site_name" content="よね/Yone Musics">
+    <meta property="og:title" content="ページが見つかりません">
+    <meta property="og:description" content="よね/Yone の楽曲サイトです。">
+    <meta property="og:image" content="https://musics.yoneyo.com/images/icon.png">
+
+    <!-- Base -->
+    <base href="https://musics.yoneyo.com/">
+
+    <!-- Manifest -->
+    <link rel="manifest" href="./manifest.json">
+
+    <!-- Styles -->
+    <link rel="stylesheet" href="./styles/style.css">
+
+    <style>
+        #main {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 2em 10vw;
+        }
+
+        #pageTitle {
+            margin: .5em 0;
+            font-size: 2rem;
+        }
+
+        #text {
+            margin: .5em 0;
+        }
+
+        #backButton {
+            margin: 1em 0;
+        }
+    </style>
+
+    <!-- Scripts -->
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"
+        integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+
+    <script>
+        const pageTitleLangs = {
+            "ja-JP": "ページが見つかりません | よね/Yone Musics",
+            "en-US": "Page not found | Yone Musics",
+            "ko-KR": "페이지를 찾을 수 없음 | Yone Musics"
+        }
+    </script>
+
+    <script src="./scripts/script.mjs" type="module"></script>
+</head>
+
+<body class="ja-jp">
+    <header></header>
+
+    <main>
+        <section id="main">
+            <h2 id="pageTitle">
+                <span class="ja-jp">ページが見つかりません</span>
+                <span class="en-us">Page not found</span>
+                <span class="ko-kr">페이지를 찾을 수 없음</span>
+            </h2>
+            <p id="text">
+                <span class="ja-jp">リクエストされたページが見つかりません。</span>
+                <span class="en-us">The requested page was not found.</span>
+                <span class="ko-kr">요청하신 페이지를 찾을 수 없습니다.</span>
+            </p>
+            <a id="backButton" class="button" href="./">
+                <span class="ja-jp">トップページへ戻る</span>
+                <span class="en-us">Back to the top page</span>
+                <span class="ko-kr">톱 페이지로 돌아가기</span>
+                <span class="material-symbols-outlined">
+                    chevron_right
+                </span>
+            </a>
+        </section>
+    </main>
+
+    <footer></footer>
+</body>
+
+</html>

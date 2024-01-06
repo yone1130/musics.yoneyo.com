@@ -1,0 +1,282 @@
+<!--
+
+    index.html | Yone Musics Website
+
+    (c) よね/Yone
+
+    No modification or reproduction of any kind is permitted.
+    改変や複製を一切禁じます。
+
+-->
+<!DOCTYPE html>
+<html lang="ja-JP">
+
+<head prefix="og: https://ogp.me/ns#">
+    <!-- Meta -->
+    <meta charset="UTF-8">
+    <title>よね/Yone Musics</title>
+    <meta name="description" content="よね/Yone の楽曲サイトです。">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- OGP -->
+    <meta property="og:url" content="https://musics.yoneyo.com/">
+    <meta property="og:type" content="website">
+    <meta property="og:site_name" content="よね/Yone Musics">
+    <meta property="og:title" content="ホーム">
+    <meta property="og:description" content="よね/Yone の楽曲サイトです。">
+    <meta property="og:image" content="https://musics.yoneyo.com/images/icon.png">
+
+    <!-- Base -->
+    <base href="https://musics.yoneyo.com/">
+
+    <!-- Manifest -->
+    <link rel="manifest" href="./manifest.json">
+
+    <!-- Styles -->
+    <link rel="stylesheet" href="./styles/style.css">
+
+    <style>
+        .sectionTitle {
+            margin: 3em 0;
+        }
+
+        #hero {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 100%;
+            padding: 2rem 0;
+        }
+
+        #hero>* {
+            width: 50%;
+        }
+
+        #albumJacketImg {
+            display: inline-flex;
+            justify-content: flex-end;
+            margin: 2rem;
+        }
+
+        #albumJacketImg>img {
+            --size: 24rem;
+            width: var(--size);
+            height: var(--size);
+        }
+
+        #albumInfo {
+            display: inline-flex;
+            flex-direction: column;
+            align-items: flex-start;
+            margin: 2rem;
+            font-family: 'Poppins', sans-serif;
+            font-weight: bold;
+        }
+
+        #albumName {
+            font-size: 2rem;
+        }
+
+        #links {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 2rem;
+        }
+
+        #links>.button {
+            margin: 1rem;
+        }
+
+        #use {
+            padding: 2rem 10vw;
+        }
+
+        #usingLists li {
+            margin: 1rem 0;
+        }
+
+        #usingLists .listTitle {
+            margin: 1em 0;
+        }
+
+        #usingLists .listBody {
+            padding: 0 2rem;
+        }
+
+        #download {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        #downloadAgree {
+            display: inline-flex;
+            align-items: center;
+            padding: 1rem;
+        }
+
+        #downloadAgreeCheckbox {
+            margin-right: .5rem;
+            width: 2rem;
+            height: 2rem;
+        }
+
+        #downloadAgreeLabel {
+            display: inline;
+        }
+
+        #downloadButton {
+            border: 1px solid #00000000;
+            margin: 2rem 0;
+        }
+
+        #downloadButton:disabled {
+            border: 1px solid #808080ff;
+            background-color: #00000000;
+            color: #808080ff;
+            cursor: not-allowed;
+        }
+
+        @media (max-width: 768px) {
+            #hero {
+                flex-direction: column;
+            }
+
+            #hero>* {
+                width: 100%;
+            }
+
+            #albumJacketImg {
+                justify-content: center;
+
+            }
+
+            #albumJacketImg>img {
+                --size: 75vw;
+                height: 100%;
+            }
+
+            #albumInfo {
+                align-items: center;
+                text-align: center;
+            }
+        }
+    </style>
+
+    <!-- Scripts -->
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"
+        integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+
+    <script>
+        const pageTitleLangs = {
+            "ja-JP": "The Beginning | よね/Yone Musics",
+            "en-US": "The Beginning | Yone Musics",
+            "ko-KR": "The Beginning | 요네/Yone Musics",
+        }
+    </script>
+
+    <script src="./scripts/script.mjs" type="module"></script>
+</head>
+
+<body class="ja-jp">
+    <header></header>
+
+    <main>
+        <section id="hero">
+            <div id="albumJacketImg">
+                <img class="ja-jp"
+                    src="https://cdn.yoneyo.com/images/albums/the_beginning/yone_the_beginning_jacket_image.png"
+                    alt="The Beginning のジャケット写真">
+                <img class="en-us"
+                    src="https://cdn.yoneyo.com/images/albums/the_beginning/yone_the_beginning_jacket_image.png"
+                    alt="Jacket picture of 'The Beginning'">
+                <img class="ko-kr"
+                    src="https://cdn.yoneyo.com/images/albums/the_beginning/yone_the_beginning_jacket_image.png"
+                    alt="'The Beginning' 재킷 사진">
+            </div>
+
+            <div id="albumInfo">
+                <span id="albumName">The Beginning</span>
+            </div>
+        </section>
+
+        <section id="links">
+            <a class="button" href="https://big-up.style/GBRxY4hgmW" target="_blank" rel="noopener noreferrer">
+                <span class="ja-jp">この楽曲を聴く</span>
+                <span class="en-us">Listen to this music</span>
+                <span class="ko-kr">이 음악 듣기</span>
+            </a>
+        </section>
+
+        <section id="use">
+            <h3 class="sectionTitle">
+                <span class="ja-jp">この楽曲を使う</span>
+                <span class="en-us">Use this music</span>
+                <span class="ko-kr">이 음악 이용</span>
+            </h3>
+
+            <div class="sectionContent">
+                <ul id="usingLists">
+                    <li>
+                        <h4 class="listTitle">
+                            <span class="ja-jp">追加利用条件</span>
+                            <span class="en-us">Additional Terms of Use</span>
+                            <span class="ko-kr">추가 이용 조건</span>
+                        </h4>
+
+                        <p class="listBody">
+                            <span class="ja-jp">
+                                本楽曲はYouTube Content IDに登録済です。<br>
+                                YouTubeで利用可能ですが、収益化はできません。<br>
+                                利用した動画に対して BIG UP! から申し立てが行われますが、チャンネルに影響はありません。
+                            </span>
+                            <span class="en-us">
+                                This music is already registered with YouTube Content ID.<br>
+                                Can be used on YouTube, but cannot be monetized.<br>
+                                A claim will be filed by BIG UP! against the video you used, but it will not affect your
+                                channel.
+                            </span>
+                            <span class="ko-kr">
+                                본 음악은 유튜브 Content ID에 등록되어 있습니다.<br>
+                                유튜브에서 사용할 수 있지만, 수익화는 불가능합니다.<br>
+                                이용된 동영상에 대해 BIG UP! 에서 소유권 주장 제기되지만, 채널에는 영향을 미치지 않습니다.
+                            </span>
+                        </p>
+                    </li>
+                </ul>
+
+                <div id="download">
+                    <div id="downloadAgree">
+                        <input type="checkbox" name="downloadAgreeCheckbox" id="downloadAgreeCheckbox">
+
+                        <label id="downloadAgreeLabel" for="downloadAgreeCheckbox">
+                            <span class="inline en-us">I agree to&MediumSpace;</span>
+
+                            <a href="./license" target="_blank">
+                                <span class="inline ja-jp">楽曲利用ライセンス</span>
+                                <span class="inline en-us">License to Use of Yone Musics</span>
+                                <span class="inline ko-kr">음악 이용 라이센스</span>
+                            </a>
+
+                            <span class="inline en-us">&MediumSpace;and Additional Terms of Use</span>
+                            <span class="inline ja-jp">&MediumSpace;と 追加利用条件 に同意する</span>
+                            <span class="inline ko-kr">&MediumSpace;및 추가 이용조건에 동의합니다.</span>
+                        </label>
+                    </div>
+
+                    <button id="downloadButton" class="button disabled" disabled download
+                        href="https://dl.yoneyo.com/audios/musics/the_beginning/yone_the_beginning.mp3?type=audio/mpeg&name=yone_the_beginning.mp3">
+                        <span class="ja-jp">ダウンロード</span>
+                        <span class="en-us">Download</span>
+                        <span class="ko-kr">다운로드</span>
+                    </button>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer></footer>
+</body>
+
+</html>

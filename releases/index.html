@@ -1,0 +1,139 @@
+<!--
+
+    index.html | releases | Yone Musics Website
+
+    (c) よね/Yone
+
+    No modification or reproduction of any kind is permitted.
+    改変や複製を一切禁じます。
+
+-->
+<!DOCTYPE html>
+<html lang="ja-JP">
+
+<head prefix="og: https://ogp.me/ns#">
+    <!-- Meta -->
+    <meta charset="UTF-8">
+    <title>よね/Yone Musics</title>
+    <meta name="description" content="よね/Yone の楽曲一覧">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- OGP -->
+    <meta property="og:url" content="https://musics.yoneyo.com/">
+    <meta property="og:type" content="website">
+    <meta property="og:site_name" content="よね/Yone Musics">
+    <meta property="og:title" content="楽曲">
+    <meta property="og:description" content="よね/Yone の楽曲一覧">
+    <meta property="og:image" content="https://musics.yoneyo.com/images/icon.png">
+
+    <!-- Base -->
+    <base href="https://musics.yoneyo.com/">
+
+    <!-- Manifest -->
+    <link rel="manifest" href="./manifest.json">
+
+    <!-- Styles -->
+    <link rel="stylesheet" href="./styles/style.css">
+
+    <style>
+        #pageTitle {
+            margin: 2rem 0;
+            text-align: center;
+            font-size: 1.2rem;
+        }
+
+        #releases {
+            padding: 2rem 10vw;
+        }
+
+        #releasesLists {
+            width: 100%;
+            height: 100%;
+            list-style: none;
+        }
+
+        #releasesLists li {
+            display: inline-block;
+            width: 8rem;
+            height: 10rem;
+        }
+
+        #releasesLists a {
+            display: inline-block;
+            width: 8rem;
+            height: 10rem;
+            padding: 1em;
+            text-decoration: none;
+            color: var(--body-color);
+        }
+
+        #releasesLists a:hover {
+            background-color: #00000018;
+        }
+
+        #releasesLists .albumJacketImg,
+        #releasesLists .albumJacketImg img {
+            width: 100%;
+            height: 8rem;
+        }
+
+        #releasesLists .title {
+            margin-top: 1em;
+            text-align: center;
+        }
+    </style>
+
+    <!-- Scripts -->
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"
+        integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+
+    <script>
+        const pageTitleLangs = {
+            "ja-JP": "楽曲 | よね/Yone Musics",
+            "en-US": "Musics | Yone Musics",
+            "ko-KR": "음악 | 요네/Yone Musics"
+        }
+    </script>
+
+    <script src="./scripts/script.mjs" type="module"></script>
+</head>
+
+<body class="ja-jp">
+    <header></header>
+
+    <main>
+        <section id="releases">
+            <h2 id="pageTitle">
+                <span class="ja-jp">楽曲一覧</span>
+                <span class="en-us">Musics List</span>
+                <span class="ko-kr">음악 목록</span>
+            </h2>
+
+            <ul id="releasesLists">
+                <li>
+                    <a href="./releases/the_beginning/">
+                        <div class="albumJacketImg">
+                            <img class="ja-jp"
+                                src="https://cdn.yoneyo.com/images/albums/the_beginning/yone_the_beginning_jacket_image.png"
+                                alt="The Beginning のジャケット写真">
+                            <img class="en-us"
+                                src="https://cdn.yoneyo.com/images/albums/the_beginning/yone_the_beginning_jacket_image.png"
+                                alt="Jacket picture of 'The Beginning'">
+                            <img class="ko-kr"
+                                src="https://cdn.yoneyo.com/images/albums/the_beginning/yone_the_beginning_jacket_image.png"
+                                alt="'The Beginning' 재킷 사진">
+                        </div>
+
+                        <div class="info">
+                            <div class="title">The Beginning</div>
+                        </div>
+                    </a>
+                </li>
+            </ul>
+        </section>
+    </main>
+
+    <footer></footer>
+</body>
+
+</html>

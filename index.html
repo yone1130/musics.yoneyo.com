@@ -1,0 +1,168 @@
+<!--
+
+    index.html | Yone Musics Website
+
+    (c) よね/Yone
+
+    No modification or reproduction of any kind is permitted.
+    改変や複製を一切禁じます。
+
+-->
+<!DOCTYPE html>
+<html lang="ja-JP">
+
+<head prefix="og: https://ogp.me/ns#">
+    <!-- Meta -->
+    <meta charset="UTF-8">
+    <title>よね/Yone Musics</title>
+    <meta name="description" content="よね/Yone の楽曲サイトです。">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- OGP -->
+    <meta property="og:url" content="https://musics.yoneyo.com/">
+    <meta property="og:type" content="website">
+    <meta property="og:site_name" content="よね/Yone Musics">
+    <meta property="og:title" content="ホーム">
+    <meta property="og:description" content="よね/Yone の楽曲サイトです。">
+    <meta property="og:image" content="https://musics.yoneyo.com/images/icon.png">
+
+    <!-- Base -->
+    <base href="https://musics.yoneyo.com/">
+
+    <!-- Manifest -->
+    <link rel="manifest" href="./manifest.json">
+
+    <!-- Styles -->
+    <link rel="stylesheet" href="./styles/style.css">
+
+    <style>
+        #latestAlbum {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 100%;
+            padding: 2rem 0;
+        }
+
+        #latestAlbum>* {
+            width: 50%;
+        }
+
+        #latestAlbumJacketImg {
+            display: inline-flex;
+            justify-content: flex-end;
+            margin: 2rem;
+        }
+
+        #latestAlbumJacketImg>img {
+            --size: 24rem;
+            width: var(--size);
+            height: var(--size);
+        }
+
+        #latestAlbumInfo {
+            display: inline-flex;
+            flex-direction: column;
+            align-items: flex-start;
+            margin: 2rem;
+            font-family: 'Poppins', sans-serif;
+            font-weight: bold;
+        }
+
+        #latestAlbumName {
+            font-size: 2rem;
+        }
+
+        #latestAlbumLabel::after {
+            display: inline-block;
+            width: 3rem;
+            height: 2px;
+            /* margin-top: 0em; */
+            background-color: #808080ff;
+            content: "";
+        }
+
+        #latestAlbumMoreButton {
+            margin: 1rem 0;
+        }
+
+        @media (max-width: 768px) {
+            #latestAlbum {
+                flex-direction: column;
+            }
+
+            #latestAlbum>* {
+                width: 100%;
+            }
+
+            #latestAlbumJacketImg {
+                justify-content: center;
+
+            }
+
+            #latestAlbumJacketImg>img {
+                --size: 75vw;
+                height: 100%;
+            }
+
+            #latestAlbumInfo {
+                align-items: center;
+                text-align: center;
+            }
+        }
+    </style>
+
+    <!-- Scripts -->
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"
+        integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+
+    <script>
+        const pageTitleLangs = {
+            "ja-JP": "ホーム | よね/Yone Musics",
+            "en-US": "Home | Yone Musics",
+            "ko-KR": "홈 | 요네/Yone Musics",
+        }
+    </script>
+
+    <script src="./scripts/script.mjs" type="module"></script>
+</head>
+
+<body class="ja-jp">
+    <header></header>
+
+    <main>
+        <section id="latestAlbum">
+            <div id="latestAlbumJacketImg">
+                <img class="ja-jp"
+                    src="https://cdn.yoneyo.com/images/albums/the_beginning/yone_the_beginning_jacket_image.png"
+                    alt="『The Beginning』のジャケット写真">
+                <img class="en-us"
+                    src="https://cdn.yoneyo.com/images/albums/the_beginning/yone_the_beginning_jacket_image.png"
+                    alt="Jacket picture of 'The Beginning'">
+                <img class="ko-kr"
+                    src="https://cdn.yoneyo.com/images/albums/the_beginning/yone_the_beginning_jacket_image.png"
+                    alt="'The Beginning' 재킷 사진">
+            </div>
+
+            <div id="latestAlbumInfo">
+                <div id="latestAlbumLabel">
+                    <span class="ja-jp">最新リリース</span>
+                    <span class="en-us">Latest Released</span>
+                    <span class="ko-kr">최신 릴리스</span>
+                </div>
+
+                <span id="latestAlbumName">The Beginning</span>
+
+                <a id="latestAlbumMoreButton" class="button" href="./releases/the_beginning">
+                    <span class="ja-jp">開く</span>
+                    <span class="en-us">More</span>
+                    <span class="ko-kr">더보기</span>
+                </a>
+            </div>
+        </section>
+    </main>
+
+    <footer></footer>
+</body>
+
+</html>
