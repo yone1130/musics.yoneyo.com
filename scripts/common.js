@@ -79,8 +79,8 @@
         }
 
         initPage() {
-            $("header").load("./common/header.html");
-            $("footer").load("./common/footer.html");
+            $("header").load("./elements/header.html");
+            $("footer").load("./elements/footer.html");
 
             $(document).on("click", "#headerNavButton", function (event) {
                 $("#headerNavButton").toggleClass("opened");
