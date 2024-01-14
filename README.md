@@ -1,3 +1,4 @@
+
 # Yone Musics Website
 
 ## About
@@ -6,12 +7,12 @@
 ## Usage Technology
 
 #### Libraries / Languages
-- HTML5
-- CSS3
+- HTML5/CSS3
 - JavaScript
+- jQuery v3.7.1
 
 #### Build & Deploy
 - Cloudflare Pages
 
 ## LICENSE
-**ライセンスは置いておらず、改変は一切禁止しています。**
+**No Licensed. No modification or reproduction of any kind is permitted.**

@@ -1,12 +1,13 @@
 {
+    "manifest_version": "",
     "name": "よね/Yone Musics",
     "short_name": "Yone-Musics",
+    "description": "",
     "scope": "/",
     "start_url": "/index.html",
-    "background_color": "#ffffff",
+    "theme_color": "#40e040ff",
+    "background_color": "#ffffffff",
     "display": "standalone",
-    "theme_color": "#40e040",
-    "description": "",
     "icons": [
         {
             "src": "https://cdn.yoneyo.com/images/yone_logos/yone_icon.png",
