@@ -1,18 +1,17 @@
 
 # Yone Musics Website
 
-## About
-よね/Yone の楽曲サイトです。
+## Overview
 
-## Usage Technology
+Yone's Musics Website.  
+よね/Yone の楽曲ウェブサイトです。
 
-#### Libraries / Languages
-- HTML5/CSS3
-- JavaScript
-- jQuery v3.7.1
+## Usage
 
-#### Build & Deploy
-- Cloudflare Pages
+`src/pages/` をデプロイします。
 
 ## LICENSE
+
 **No Licensed. No modification or reproduction of any kind is permitted.**
+
+Copyright (c) よね/Yone
