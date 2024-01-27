@@ -11,36 +11,40 @@
 
 'use strict';
 
-(function () {
-    class Page {
-        langs = ["ja-jp", "en-us", "ko-kr"];
+(() => {
+    const Page = class {
+        get langs() {
+            return ["ja-jp", "en-us", "ko-kr"];
+        }
+
 
         constructor() {
-            this.getLang();
+            this.getClientLang();
+            this.changePageLang(this.pageLang);
             this.initPage();
         }
 
-        getLang() {
-            this.pageLang = localStorage.getItem("lang");
 
-            if (this.pageLang === null) {
-                const userLang = navigator.language || navigator.userLanguage;
-
-                if (userLang.toLowerCase().includes('ja')) {
-                    this.pageLang = "ja-jp";
-                } else if (userLang.toLowerCase().includes('en')) {
-                    this.pageLang = "en-us";
-                } else if (userLang.toLowerCase().includes('ko')) {
-                    this.pageLang = "ko-kr";
-                } else {
-                    this.pageLang = "en-us";
-                }
-
-                localStorage.setItem("lang", this.pageLang);
+        getClientLang() {
+            const langsMap = {
+                "ja": "ja-jp",
+                "en": "en-us",
+                "ko": "ko-kr"
             }
 
-            this.changePageLang(this.pageLang);
+            const defaultLang = "en-us";
+
+            this.pageLang = localStorage.getItem("lang");
+
+            if (this.pageLang !== null) { return; }
+
+            const userLang = (navigator.language || navigator.userLanguage).toLowerCase();
+
+            this.pageLang = langsMap[userLang] || defaultLang;
+
+            localStorage.setItem("lang", this.pageLang);
         }
+
 
         changePageLang(lang) {
             switch (lang) {
@@ -77,6 +81,7 @@
                     break;
             }
         }
+
 
         initPage() {
             $("header").load("./elements/header.html");
@@ -117,6 +122,6 @@
         }
     }
 
-    document.addEventListener("DOMContentLoaded", new Page());
-}
-)();
+
+    $(() => new Page());
+})();
