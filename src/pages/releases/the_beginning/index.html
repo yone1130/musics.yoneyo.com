@@ -96,16 +96,31 @@
             padding: 2rem 10vw;
         }
 
-        #usingLists li {
+        #usingTerms li {
             margin: 1rem 0;
         }
 
-        #usingLists .listTitle {
+        #usingTerms .listTitle {
             margin: 1em 0;
         }
 
-        #usingLists .listBody {
-            padding: 0 2rem;
+        #usingTerms .listBody {
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        #usingTerms table tbody tr:nth-of-type(odd) {
+            background-color: #00000040
+        }
+
+        #usingTerms table tbody tr:nth-of-type(even) {
+            background-color: #00000020;
+        }
+
+        #usingTerms table tbody th,
+        #usingTerms table tbody td {
+            min-width: 5em;
+            padding: .5em 2em;
         }
 
         #download {
@@ -231,34 +246,79 @@
             </h3>
 
             <div class="sectionContent">
-                <ul id="usingLists">
-                    <li>
-                        <h4 class="listTitle">
-                            <span class="ja-jp">追加利用条件</span>
-                            <span class="en-us">Additional Terms of Use</span>
-                            <span class="ko-kr">추가 이용 조건</span>
-                        </h4>
+                <div id="usingTerms">
+                    <h4 class="listTitle">
+                        <span class="ja-jp">追加利用条件</span>
+                        <span class="en-us">Additional Terms of Use</span>
+                        <span class="ko-kr">추가 이용 조건</span>
+                    </h4>
 
-                        <p class="listBody">
-                            <span class="ja-jp">
-                                本楽曲はYouTube Content IDに登録済です。<br>
-                                YouTubeで利用可能ですが、収益化はできません。<br>
-                                利用した動画に対して BIG UP! から申し立てが行われますが、チャンネルに影響はありません。
-                            </span>
-                            <span class="en-us">
-                                This music is already registered with YouTube Content ID.<br>
-                                Can be used on YouTube, but cannot be monetized.<br>
-                                A claim will be filed by BIG UP! against the video you used, but it will not affect your
-                                channel.
-                            </span>
-                            <span class="ko-kr">
-                                본 음악은 유튜브 Content ID에 등록되어 있습니다.<br>
-                                유튜브에서 사용할 수 있지만, 수익화는 불가능합니다.<br>
-                                이용된 동영상에 대해 BIG UP! 에서 소유권 주장 제기되지만, 채널에는 영향을 미치지 않습니다.
-                            </span>
-                        </p>
-                    </li>
-                </ul>
+                    <table class="listBody">
+                        <tbody>
+                            <tr>
+                                <th>
+                                    <span class="ja-jp">利用申請の必要</span>
+                                    <span class="en-us">Whether an application for useis required</span>
+                                    <span class="ko-kr">이용 신청 필요 여부</span>
+                                </th>
+                                <td>
+                                    <span class="ja-jp">不要です</span>
+                                    <span class="en-us">Not required</span>
+                                    <span class="ko-kr">필요하지 않습니다</span>
+                                </td>
+                            </tr>
+                            <tr>
+                                <th>
+                                    <span class="ja-jp">利用料金</span>
+                                    <span class="en-us">Usage Fees</span>
+                                    <span class="ko-kr">사용 요금</span>
+                                </th>
+                                <td>
+                                    <span class="ja-jp">購入が必要です</span>
+                                    <span class="en-us">Purchase required</span>
+                                    <span class="ko-kr">구매가 필요합니다</span>
+                                </td>
+                            </tr>
+                            <tr>
+                                <th>
+                                    <span class="ja-jp">商用利用の可否</span>
+                                    <span class="en-us">Whether commercial use is allowed</span>
+                                    <span class="ko-kr">상업적 이용 가능 여부</span>
+                                </th>
+                                <td>
+                                    <span class="ja-jp">可能です</span>
+                                    <span class="en-us">Allowed</span>
+                                    <span class="ko-kr">가능합니다</span>
+                                </td>
+                            </tr>
+                            <tr>
+                                <th>
+                                    <span class="ja-jp">YouTube 収益化の可否</span>
+                                    <span class="en-us">Whether YouTube monetization is possible</span>
+                                    <span class="ko-kr">YouTube 수익 창출 가능 여부</span>
+                                </th>
+                                <td>
+                                    <span class="ja-jp">
+                                        本楽曲はYouTube Content IDに登録済です。<br>
+                                        YouTubeで利用可能ですが、収益化はできません。<br>
+                                        利用した動画に対して BIG UP! から申し立てが行われますが、チャンネルに影響はありません。
+                                    </span>
+                                    <span class="en-us">
+                                        This music is already registered with YouTube Content ID.<br>
+                                        Can be used on YouTube, but cannot be monetized.<br>
+                                        A claim will be filed by BIG UP! against the video you used, but it will not affect your
+                                        channel.
+                                    </span>
+                                    <span class="ko-kr">
+                                        본 음악은 유튜브 Content ID에 등록되어 있습니다.<br>
+                                        유튜브에서 사용할 수 있지만, 수익화는 불가능합니다.<br>
+                                        이용된 동영상에 대해 BIG UP! 에서 소유권 주장 제기되지만, 채널에는 영향을 미치지 않습니다.
+                                    </span>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
 
                 <div id="download">
                     <div id="downloadAgree">
@@ -280,10 +340,10 @@
                     </div>
 
                     <button id="downloadButton" class="button disabled" disabled download
-                        href="https://dl.yoneyo.com/audios/musics/the_beginning/yone_the_beginning.mp3?type=audio/mpeg&name=yone_the_beginning.mp3">
-                        <span class="ja-jp">ダウンロード</span>
-                        <span class="en-us">Download</span>
-                        <span class="ko-kr">다운로드</span>
+                        href="https://big-up.style/GBRxY4hgmW">
+                        <span class="ja-jp">ダウンロード（購入）</span>
+                        <span class="en-us">Download (purchase)</span>
+                        <span class="ko-kr">다운로드 (구매)</span>
                     </button>
                 </div>
             </div>
