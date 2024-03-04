@@ -46,7 +46,7 @@
         }
 
         #releases {
-            padding: 2rem 10vw;
+            padding: 2rem 20vw;
         }
 
         #releasesLists {
@@ -56,15 +56,15 @@
         }
 
         #releasesLists li {
-            display: inline-block;
-            width: 8rem;
-            height: 10rem;
+            margin: 1rem 0;
         }
 
         #releasesLists a {
-            display: inline-block;
-            width: 8rem;
-            height: 10rem;
+            display: flex;
+            flex-direction: row;
+            justify-content: flex-start;
+            align-items: center;
+            height: 8rem;
             padding: 1em;
             text-decoration: none;
             color: var(--body-color);
@@ -76,13 +76,52 @@
 
         #releasesLists .albumJacketImg,
         #releasesLists .albumJacketImg img {
-            width: 100%;
+            width: 8rem;
             height: 8rem;
         }
 
+        #releasesLists .info {
+            margin-left: 1em;
+        }
+
         #releasesLists .title {
-            margin-top: 1em;
-            text-align: center;
+            margin-bottom: .5em;
+            font-size: 1.3em;
+            font-family: 'Poppins', sans-serif;
+        }
+
+        #releasesLists .date {
+            margin-bottom: .5em;
+        }
+
+        #releasesLists .tags {
+            display: flex;
+        }
+
+        #releasesLists .tag {
+            display: inline-block;
+            margin-right: .2em;
+            padding: .2em;
+            border-radius: .5em;
+            background-color: #303030;
+            color: #ffffff;
+        }
+
+        #releasesLists .tag.free-download {
+            background-color: #4080f0;
+            color: #ffffff;
+        }
+
+        #releasesLists .tag.use-allowed {
+            background-color: #40a080;
+            color: #ffffff;
+        }
+
+        @media (max-width: 768px) {
+            #releases {
+                padding-left: 5vw;
+                padding-right: 5vw;
+            }
         }
     </style>
 
@@ -124,11 +163,85 @@
 
             <ul id="releasesLists">
                 <li>
+                    <a href="./releases/wave/">
+                        <div class="albumJacketImg">
+                            <img class="ja-jp"
+                                src="https://cdn.yoneyo.com/images/albums/wave/yone_wave_jacket_image.png"
+                                alt="Wave のジャケット画像">
+                            <img class="en-us"
+                                src="https://cdn.yoneyo.com/images/albums/wave/yone_wave_jacket_image.png"
+                                alt="Jacket picture of 'Wave'">
+                            <img class="ko-kr"
+                                src="https://cdn.yoneyo.com/images/albums/wave/yone_wave_jacket_image.png"
+                                alt="'Wave' 재킷 사진">
+                        </div>
+
+                        <div class="info">
+                            <div class="title">Wave</div>
+                            <div class="date">
+                                <span class="ja-jp">リリース日: Comming Soon!</span>
+                                <span class="en-us">Released on: Comming Soon!</span>
+                                <span class="ko-kr">출시일: Comming Soon!</span>
+                            </div>
+                            <div class="tags">
+                                <div class="tag use-allowed">
+                                    <span class="ja-jp">利用可</span>
+                                    <span class="en-us">Use Allowed</span>
+                                    <span class="ko-kr">이용 가능</span>
+                                </div>
+                                <div class="tag free-download">
+                                    <span class="ja-jp">フリーダウンロード</span>
+                                    <span class="en-us">Free Download</span>
+                                    <span class="ko-kr">무료 다운로드</span>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </li>
+
+                <li>
+                    <a href="./releases/moonrise/">
+                        <div class="albumJacketImg">
+                            <img class="ja-jp"
+                                src="https://cdn.yoneyo.com/images/albums/moonrise/yone_moonrise_jacket_image.png"
+                                alt="Moonrise のジャケット画像">
+                            <img class="en-us"
+                                src="https://cdn.yoneyo.com/images/albums/moonrise/yone_moonrise_jacket_image.png"
+                                alt="Jacket picture of 'Moonrise'">
+                            <img class="ko-kr"
+                                src="https://cdn.yoneyo.com/images/albums/moonrise/yone_moonrise_jacket_image.png"
+                                alt="'Moonrise' 재킷 사진">
+                        </div>
+
+                        <div class="info">
+                            <div class="title">Moonrise</div>
+                            <div class="date">
+                                <span class="ja-jp">リリース日: Comming Soon!</span>
+                                <span class="en-us">Released on: Comming Soon!</span>
+                                <span class="ko-kr">출시일: Comming Soon!</span>
+                            </div>
+                            <div class="tags">
+                                <div class="tag use-allowed">
+                                    <span class="ja-jp">利用可</span>
+                                    <span class="en-us">Use Allowed</span>
+                                    <span class="ko-kr">이용 가능</span>
+                                </div>
+                                <div class="tag free-download">
+                                    <span class="ja-jp">フリーダウンロード</span>
+                                    <span class="en-us">Free Download</span>
+                                    <span class="ko-kr">무료 다운로드</span>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </li>
+
+                <li>
                     <a href="./releases/the_beginning/">
                         <div class="albumJacketImg">
                             <img class="ja-jp"
                                 src="https://cdn.yoneyo.com/images/albums/the_beginning/yone_the_beginning_jacket_image.png"
-                                alt="The Beginning のジャケット写真">
+                                alt="The Beginning のジャケット画像">
                             <img class="en-us"
                                 src="https://cdn.yoneyo.com/images/albums/the_beginning/yone_the_beginning_jacket_image.png"
                                 alt="Jacket picture of 'The Beginning'">
@@ -139,6 +252,18 @@
 
                         <div class="info">
                             <div class="title">The Beginning</div>
+                            <div class="date">
+                                <span class="ja-jp">リリース日: 2023/12/15</span>
+                                <span class="en-us">Released on: Dec. 15, 2023</span>
+                                <span class="ko-kr">출시일: 2023/12/15</span>
+                            </div>
+                            <div class="tags">
+                                <div class="tag use-allowed">
+                                    <span class="ja-jp">利用可（YouTube収益化不可）</span>
+                                    <span class="en-us">Use Allowed (Cannot be Monetized on YouTube)</span>
+                                    <span class="ko-kr">이용 가능 (YouTube에서 수익화 불가)</span>
+                                </div>
+                            </div>
                         </div>
                     </a>
                 </li>
