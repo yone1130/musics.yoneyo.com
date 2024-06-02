@@ -1,0 +1,370 @@
+<!--
+
+    Yone Musics Website
+
+    Copyright (c) よね/Yone
+
+    No modification or reproduction of any kind is permitted.
+    改変や複製を一切禁じます。
+
+-->
+<!DOCTYPE html>
+<html lang="ja-JP">
+
+<head prefix="og: https://ogp.me/ns#">
+    <!-- Meta -->
+    <meta charset="UTF-8">
+    <title>Eternal Days | よね/Yone Musics</title>
+    <meta name="description" content="よね/Yone の楽曲サイトです。">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- OGP -->
+    <meta property="og:url" content="https://musics.yoneyo.com/releases/eternal-days/">
+    <meta property="og:type" content="website">
+    <meta property="og:site_name" content="よね/Yone Musics">
+    <meta property="og:title" content="Eternal Days">
+    <meta property="og:description" content="よね/Yone の楽曲サイトです。">
+    <meta property="og:image"
+        content="https://cdn.yoneyo.com/images/yone_albums/eternal-days/yone_music_eternal_days_jacket_image.png">
+
+    <!-- Base -->
+    <base href="https://musics.yoneyo.com/">
+
+    <!-- Manifest -->
+    <link rel="manifest" href="./manifest.json">
+
+    <!-- Icon -->
+    <link rel="icon" href="https://cdn.yoneyo.com/images/yone_logos/yone_icon.png" type="image/png">
+
+    <!-- Styles -->
+    <link rel="stylesheet" href="./styles/common.css">
+
+    <style>
+        .sectionTitle {
+            margin: 3em 0;
+        }
+
+        #hero {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 100%;
+            padding: 2rem 0;
+        }
+
+        #hero>* {
+            width: 50%;
+        }
+
+        #albumJacketImg {
+            display: inline-flex;
+            justify-content: flex-end;
+            margin: 2rem;
+        }
+
+        #albumJacketImg>img {
+            --size: 24rem;
+            width: var(--size);
+            height: var(--size);
+        }
+
+        #albumInfo {
+            display: inline-flex;
+            flex-direction: column;
+            align-items: flex-start;
+            margin: 2rem;
+            font-family: 'Poppins', sans-serif;
+            font-weight: bold;
+        }
+
+        #albumName {
+            font-size: 2rem;
+        }
+
+        #links {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 2rem;
+        }
+
+        #links>.button {
+            margin: 1rem;
+        }
+
+        #use {
+            padding: 2rem 10vw;
+        }
+
+        #usingTerms li {
+            margin: 1rem 0;
+        }
+
+        #usingTerms .listTitle {
+            margin: 1em 0;
+        }
+
+        #usingTerms .listBody {
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        table tbody tr:nth-of-type(odd) {
+            background-color: #00000040
+        }
+
+        table tbody tr:nth-of-type(even) {
+            background-color: #00000020;
+        }
+
+        table tbody th,
+        table tbody td {
+            min-width: 5em;
+            padding: .5em 2em;
+        }
+
+        #download {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        #downloadAgree {
+            display: inline-flex;
+            align-items: center;
+            padding: 1rem;
+        }
+
+        #downloadAgreeCheckbox {
+            margin-right: .5rem;
+            width: 2rem;
+            height: 2rem;
+        }
+
+        #downloadAgreeLabel {
+            display: inline;
+        }
+
+        #downloadButton {
+            border: 1px solid #00000000;
+            margin: 2rem 0;
+        }
+
+        #downloadButton:disabled {
+            border: 1px solid #808080ff;
+            background-color: #00000000;
+            color: #808080ff;
+            cursor: not-allowed;
+        }
+
+        #copyright {
+            padding: 2rem 10vw;
+        }
+
+        #copyright table {
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        @media (max-width: 768px) {
+            #hero {
+                flex-direction: column;
+            }
+
+            #hero>* {
+                width: 100%;
+            }
+
+            #albumJacketImg {
+                justify-content: center;
+
+            }
+
+            #albumJacketImg>img {
+                --size: 75vw;
+                height: 100%;
+            }
+
+            #albumInfo {
+                align-items: center;
+                text-align: center;
+            }
+        }
+    </style>
+
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-YE0H1WFLV9"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+
+        gtag('config', 'G-YE0H1WFLV9');
+    </script>
+
+    <!-- Scripts -->
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"
+        integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+
+    <script>
+        const pageTitleLangs = {
+            "ja-JP": "Eternal Days | よね/Yone Musics",
+            "en-US": "Eternal Days | Yone Musics",
+            "ko-KR": "Eternal Days | 요네/Yone Musics",
+        }
+    </script>
+
+    <script src="./scripts/common.js" type="module"></script>
+</head>
+
+<body class="ja-jp">
+    <header></header>
+
+    <main>
+        <section id="hero">
+            <div id="albumJacketImg">
+                <img class="ja-jp"
+                    src="https://cdn.yoneyo.com/images/yone_albums/eternal-days/yone_music_eternal_days_jacket_image.png"
+                    alt="Eternal Days のジャケット画像">
+                <img class="en-us"
+                    src="https://cdn.yoneyo.com/images/yone_albums/eternal-days/yone_music_eternal_days_jacket_image.png"
+                    alt="Jacket picture of 'Eternal Days'">
+                <img class="ko-kr"
+                    src="https://cdn.yoneyo.com/images/yone_albums/eternal-days/yone_music_eternal_days_jacket_image.png"
+                    alt="'Eternal Days' 재킷 사진">
+            </div>
+
+            <div id="albumInfo">
+                <span id="albumName">Eternal Days</span>
+            </div>
+        </section>
+
+        <section id="links">
+            <a class="button" href="https://big-up.style/PfqZECTENZ" target="_blank" rel="noopener noreferrer">
+                <span class="ja-jp">この楽曲を聴く</span>
+                <span class="en-us">Listen to this music</span>
+                <span class="ko-kr">이 음악 듣기</span>
+            </a>
+        </section>
+
+        <section id="use">
+            <h3 class="sectionTitle">
+                <span class="ja-jp">この楽曲を使う</span>
+                <span class="en-us">Use this music</span>
+                <span class="ko-kr">이 음악 이용</span>
+            </h3>
+
+            <div class="sectionContent">
+                <div id="usingTerms">
+                    <h4 class="listTitle">
+                        <span class="ja-jp">追加利用条件</span>
+                        <span class="en-us">Additional Terms of Use</span>
+                        <span class="ko-kr">추가 이용 조건</span>
+                    </h4>
+
+                    <table class="listBody">
+                        <tbody>
+                            <tr>
+                                <th>
+                                    <span class="ja-jp">利用申請の必要</span>
+                                    <span class="en-us">Whether an application for useis required</span>
+                                    <span class="ko-kr">이용 신청 필요 여부</span>
+                                </th>
+                                <td>
+                                    <span class="ja-jp">不要です</span>
+                                    <span class="en-us">Not required</span>
+                                    <span class="ko-kr">필요하지 않습니다</span>
+                                </td>
+                            </tr>
+                            
+                            <tr>
+                                <th>
+                                    <span class="ja-jp">YouTube 収益化の可否</span>
+                                    <span class="en-us">Whether YouTube monetization is possible</span>
+                                    <span class="ko-kr">YouTube 수익 창출 가능 여부</span>
+                                </th>
+                                <td>
+                                    <span class="ja-jp">
+                                        可能です
+                                    </span>
+                                    <span class="en-us">
+                                        Yes, you can use it on YouTube.
+                                    </span>
+                                    <span class="ko-kr">
+                                        가능합니다
+                                    </span>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+
+                <div id="download">
+                    <button id="downloadButton" class="button" download
+                        href="https://big-up.style/PfqZECTENZ">
+                        <span class="ja-jp">この楽曲をダウンロード（購入）</span>
+                        <span class="en-us">Download this music (purchase)</span>
+                        <span class="ko-kr">이 음악 다운로드 (구매)</span>
+                    </button>
+                </div>
+            </div>
+        </section>
+
+        <section id="copyright">
+            <h3 class="sectionTitle">
+                <span class="ja-jp">この楽曲の著作権、委託先など</span>
+                <span class="en-us">Copyrights and consignees of this music</span>
+                <span class="ko-kr">이 음악의 저작권, 위탁처 등</span>
+            </h3>
+
+            <div class="sectionContent">
+                <table class="listBody">
+                    <tbody>
+                        <tr>
+                            <th>
+                                <span class="ja-jp">原盤権者</span>
+                                <span class="en-us">Producers of Phonograms</span>
+                                <span class="ko-kr">음반 제작자</span>
+                            </th>
+                            <td>
+                                <span class="ja-jp">&copysr; よね/Yone</span>
+                                <span class="en-us">&copysr; よね/Yone</span>
+                                <span class="ko-kr">&copysr; よね/Yone</span>
+                            </td>
+                        </tr>
+                        
+                        <tr>
+                            <th>
+                                <span class="ja-jp">作曲者</span>
+                                <span class="en-us">Composer</span>
+                                <span class="ko-kr">작곡자</span>
+                            </th>
+                            <td>
+                                <span class="ja-jp">&copy; よね/Yone</span>
+                                <span class="en-us">&copy; よね/Yone</span>
+                                <span class="ko-kr">&copy; よね/Yone</span>
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <th>
+                                <span class="ja-jp">楽曲配信・販売委託先</span>
+                                <span class="en-us">Music Distribution and Sales Consignee</span>
+                                <span class="ko-kr">음원 유통 및 판매 위탁처</span>
+                            </th>
+                            <td>
+                                <span class="ja-jp">BIG UP!</span>
+                                <span class="en-us">BIG UP!</span>
+                                <span class="ko-kr">BIG UP!</span>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </section>
+    </main>
+
+    <footer></footer>
+</body>
+
+</html>
