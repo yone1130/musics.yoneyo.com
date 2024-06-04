@@ -155,12 +155,14 @@ button {
     font-size: 1.5rem;
 }
 
-.sectionTitle {
+.sectionTitle,
+.section-title {
     display: flex;
     font-size: 1.2rem;
 }
 
-.sectionTitle::before {
+.sectionTitle::before,
+.section-title::before {
     display: block;
     width: 4px;
     height: auto;

@@ -27,7 +27,8 @@
     <meta property="og:image" content="https://cdn.yoneyo.com/images/yone_logos/yone_icon.png">
 
     <!-- Base -->
-    <base href="https://musics.yoneyo.com/">
+    <!-- <base href="https://musics.yoneyo.com/"> -->
+    <base href="http://127.0.0.1/src/pages/">
 
     <!-- Manifest -->
     <link rel="manifest" href="./manifest.json">
@@ -39,19 +40,6 @@
     <link rel="stylesheet" href="./styles/common.css">
 
     <style>
-        #langNotice {
-            margin: 2rem;
-            background-color: #ff6060ff;
-            border-radius: 1rem;
-            padding: 1rem 2rem;
-            color: #ffffffff;
-        }
-
-        #main {
-            padding: 1rem 10vw;
-
-        }
-
         #pageTitle {
             margin: 3em 0;
             font-size: 1.2rem;
@@ -107,6 +95,47 @@
             border-bottom: 2px solid #80808040;
             /* border-radius: 1rem; */
         }
+
+        /* Ver 20240605 */
+        .section-overview * {
+            margin-top: 1rem;
+            margin-bottom: 1rem;
+        }
+
+        .section {
+            padding: 4rem 10vw;
+        }
+
+        .section-border-bottom {
+            border-bottom: 2px dashed #808080ff;
+        }
+
+        .list {
+            margin-top: 2rem;
+            margin-bottom: 2rem;
+        }
+
+        .list-title {
+            font-size: 1.5rem;
+        }
+
+        .list-content {
+            margin-left: 2rem;
+            margin-right: 2rem;
+        }
+
+        .overview-notice {
+            padding-top: .5rem;
+            padding-bottom: .5rem;
+            background-color: #ffc0c0ff;
+        }
+
+        #langNotice {
+            margin: 2rem;
+            background-color: #ffc0c0ff;
+            border-radius: 1rem;
+            padding: 1rem 2rem;
+        }
     </style>
 
     <!-- Google tag (gtag.js) -->
@@ -138,27 +167,279 @@
     <header></header>
 
     <main>
-        <section id="main">
+        <section id="overview" class="section-overview section section-border-bottom">
+            <h3 class="section-title section-title">
+                <span class="ja-jp">
+                    よね/Yone 楽曲利用ライセンスの概要
+                </span>
+                <span class="en-us">
+                    Overview of the License to Use Yone Musics
+                </span>
+                <span class="ko-kr">
+                    요네/Yone 음악 이용 라이센스 개요
+                </span>
+            </h3>
+
+            <div class="section-content">
+                <div class="list">
+                    <h4 class="list-title">
+                        <span class="ja-jp">
+                            条件に従う限り、以下の用途で利用ができます
+                        </span>
+                        <span class="en-us">
+                            As long as the conditions are observed, the following uses are allowed
+                        </span>
+                        <span class="ko-kr">
+                            조건에 따르는 한 다음과 같은 용도로 이용할 수 있습니다
+                        </span>
+                    </h4>
+
+                    <div class="list-content">
+                        <div>
+                            <p>
+                                <span class="ja-jp">
+                                    YouTube、Twitch、ニコニコ、bilibili (哔哩哔哩)
+                                    などのUGCサービスで利用、コンサート・イベント等での演奏で利用、映画上映、ビデオ上映、各種施設でのBGM再生で利用できます。
+                                </span>
+                                <span class="en-us">
+                                    You can use it in UGC services such as YouTube, Twitch, niconico, bilibili (哔哩哔哩), etc., in performances at concerts and events, in film and video screenings, and in background music playback at various facilities.
+                                </span>
+                                <span class="ko-kr">
+                                    YouTube, Twitch, 니코니코, bilibili (哔哩哔哩) 등의 UGC 서비스로 이용, 콘서트·이벤트등에서의 연주로 이용, 영화 상영, 비디오 상영, 각종 시설에서의 BGM 재생으로 이용할 수 있습니다.
+                                </span>
+                            </p>
+                        </div>
+
+                        <div>
+                            <p>
+                                <span class="ja-jp">
+                                    営利（商用）・非営利、また個人・法人を問わず利用できます。
+                                </span>
+                                <span class="en-us">
+                                    You can use it both commercial and non-commercial use, and to individuals and corporations alike.
+                                </span>
+                                <span class="ko-kr">
+                                    영리·비영리, 또 개인·법인을 불문하고 이용할 수 있습니다.
+                                </span>
+                            </p>
+                        </div>
+
+                        <div>
+                            <p>
+                                <span class="ja-jp">
+                                    著作権使用料などの費用は無償です。（ただし、利用申請が必要な楽曲、およびUGCサービス以外で配信、販売をする場合は要相談となります。）
+                                </span>
+                                <span class="en-us">
+                                    Copyright royalties and other fees are free of charge. (However, consultation is required for music that requires an application for use, and for distribution and sales outside of the UGC service.)
+                                </span>
+                                <span class="ko-kr">
+                                    저작권 사용료 등의 비용은 무상입니다. (단, 이용신청이 필요한 악곡 및 UGC서비스 이외에서 전달, 판매하는 경우는 상담이 필요합니다.)
+                                </span>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="list">
+                    <h4 class="list-title">
+                        <span class="ja-jp">
+                            利用するにあたっての条件
+                        </span>
+                        <span class="en-us">
+                            Conditions of Use
+                        </span>
+                        <span class="ko-kr">
+                            이용함에 있어서의 조건
+                        </span>
+                    </h4>
+
+                    <div class="list-content">
+                        <div>
+                            <p>
+                                <span class="ja-jp">
+                                    各楽曲のページに追加利用条件を記載しているので、必ず確認してください。ライセンスよりもそちらが優先して適用されます。
+                                </span>
+                                <span class="en-us">
+                                    Please be sure to check the additional terms of use on each music page. That takes precedence over the license.
+                                </span>
+                                <span class="ko-kr">
+                                    각 악곡의 페이지에 추가 이용 조건을 기재하고 있으므로 반드시 확인하시기 바랍니다.라이선스보다 그쪽이 우선 적용됩니다.
+                                </span>
+                            </p>
+                        </div>
+
+                        <div>
+                            <p>
+                                <span class="ja-jp">
+                                    UGCサービスで利用する場合は説明欄などに「© ℗
+                                    よね/Yone」と「利用するすべての楽曲名」のクレジットを必ず表記してください。施設等で利用する場合はポスターなどにそれを表記してください。
+                                </span>
+                                <span class="en-us">
+                                    When using the music for UGC services, please be sure to credit “© ℗ よね/Yone” and “all music titles used” in the description field, etc. If you use the music in an institution, please indicate it on a poster or something like that.
+                                </span>
+                                <span class="ko-kr">
+                                    UGC 서비스로 이용하는 경우는 설명란 등에 「© ℗ よね/Yone」와 「이용하는 모든 악곡명」의 크레디트를 반드시 표기해 주세요.시설 등에서 이용하는 경우는 포스터 등에 그것을 표기해 주세요.
+                                </span>
+                            </p>
+                        </div>
+
+                        <div>
+                            <p>
+                                <span class="ja-jp">
+                                    利用する楽曲の、このサイト上のURLまたはリンク、ポスターなどの場合はQRコードでも可、も表記して頂けると大変ありがたいですが必須ではありません。
+                                </span>
+                                <span class="en-us">
+                                    It would be greatly appreciated, but not required, if you could also indicate the URL or link on this site for the music you are using, or a QR code in the case of posters, etc.
+                                </span>
+                                <span class="ko-kr">
+                                    이용하는 악곡의, 이 사이트상의 URL 또는 링크, 포스터등의 경우는 QR코드로도 가능, 도 표기해 주시면 대단히 감사하겠습니다만, 필수는 아닙니다.
+                                </span>
+
+                                <span class="ja-jp block-line">
+                                    YouTube 概要欄などでの表記例：<br><br>
+                                    ■ 使用音楽<br>
+                                    よね/Yone - (楽曲名)<br>
+                                    https://musics.yoneyo.com/releases/(利用する楽曲のURL)/<br>
+                                    &copy; &copysr; よね/Yone<br>
+                                </span>
+                                <span class="en-us block-line">
+                                    Example of credited in YouTube description section, etc:<br><br>
+                                    Music:<br>
+                                    Yone - (Title of Music)<br>
+                                    https://musics.yoneyo.com/releases/(URL Path of Music)/<br>
+                                    &copy; &copysr; よね/Yone<br>
+                                </span>
+                                <span class="ko-kr block-line">
+                                    YouTube 개요란 등에서의 표기 예：<br><br>
+                                    ■ 사용 음악<br>
+                                    요네/Yone - (악곡명)<br>
+                                    https://musics.yoneyo.com/releases/(이용하는 악곡의 URL)/<br>
+                                    &copy; &copysr; よね/Yone<br>
+                                </span>
+                            </p>
+                        </div>
+
+                        <div>
+                            <p>
+                                <span class="ja-jp">
+                                    違法な利用や、各楽曲の追加利用条件に反する利用、適切なクレジット表記がされていない利用はできません。
+                                </span>
+                                <span class="en-us">
+                                    Illegal use, use contrary to the additional terms of use for each piece of music, or use without proper credit notation is not permitted.
+                                </span>
+                                <span class="ko-kr">
+                                    불법적인 이용이나, 각 악곡의 추가 이용 조건에 반하는 이용, 적절한 크레디트 표기가 되어 있지 않은 이용은 할 수 없습니다.
+                                </span>
+                            </p>
+                        </div>
+
+                        <div>
+                            <p>
+                                <span class="ja-jp">
+                                    当楽曲および二次創作楽曲を、YouTube Content IDに登録したり、UGCサービス以外で配信、販売したい場合は、お問い合わせより申請が必要です。
+                                </span>
+                                <span class="en-us">
+                                    If you wish to register this music or your derivative works to YouTube Content ID or distribute or sell them outside of the UGC service, you must submit an application through Contact Me.
+                                </span>
+                                <span class="ko-kr">
+                                    본 악곡 및 2차 창작악곡을 YouTube Content ID에 등록하거나 UGC 서비스 이외로 전달, 판매하고 싶은 경우는 문의에서 신청이 필요합니다.
+                                </span>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="list">
+                    <h4 class="list-title">
+                        <span class="ja-jp">
+                            お問い合わせ
+                        </span>
+                        <span class="en-us">
+                            Contact Me
+                        </span>
+                        <span class="ko-kr">
+                            문의하기
+                        </span>
+                    </h4>
+
+                    <div class="list-content">
+                        <div>
+                            <p>
+                                <span class="ja-jp">
+                                    ご不明点や問題が発生したときは、お気軽に <a href="https://www.yoneyo.com/#contact" target="_blank"
+                                        rel="noopener noreferrer">お問い合わせ</a> ください。
+                                </span>
+                                <span class="en-us">
+                                    If you have any questions or problems, please feel free to <a href="https://www.yoneyo.com/#contact" target="_blank"
+                                        rel="noopener noreferrer">Contact Me</a>.
+                                </span>
+                                <span class="ko-kr">
+                                    문의 사항이나 문제가 발생했을 때는, 부담없이 <a href="https://www.yoneyo.com/#contact" target="_blank"
+                                        rel="noopener noreferrer">문의하기</a> 해 주세요.
+                                </span>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="list overview-notice">
+                    <div class="list-content">
+                        <p>
+                            <strong>
+                                <span class="ja-jp">
+                                    《注意》<br>
+                                    このライセンス概要は、ライセンス本文における主要な利用許諾事項とその条件を要約し、より分かりやすくしたもので、実際のライセンス文ではありません。
+                                    ライセンス本文はこの下部にありますので、必ずお読みください。
+                                </span>
+                                <span class="en-us">
+                                    [NOTICE]<br>
+                                    This "Overview of the License to Use Yone Musics" summarizes the body text of the
+                                    license and is intended to be easily understood by those who are not native Japanese
+                                    speakers, and is not the body text of the license.
+                                    Please be sure to read the full body text of the license at berow.
+                                </span>
+                                <span class="ko-kr">
+                                    《주의》<br>
+                                    이 라이선스 개요는 라이선스 본문의 주요 이용허락사항과 조건을 요약하여 보다 알기 쉽고 일본어가 원어민이 아닌 사람도 이해하기 쉽게 만든 것으로 실제
+                                    라이선스 문장이 아닙니다.
+                                    라이선스 본문은 이 하단에 있으니 꼭 읽어보시기 바랍니다.
+                                </span>
+                            </strong>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="main" class="section">
             <div id="langNotice" class="en-us ko-kr">
-                <p class="en-us">This page has not yet been translated.</p>
-                <p class="ko-kr">이 페이지는 아직 번역되지 않았습니다.</p>
+                <p class="en-us"><strong>The license body text is published in Japanese only.</strong></p>
+                <p class="ko-kr"><strong>라이선스 본문 일본어로만 게시됩니다.</strong></p>
             </div>
 
-            <h2 id="pageTitle">
-                <span class="ja-jp">よね/Yone 楽曲利用ライセンス</span>
-                <span class="en-us">License to Use Yone Musics</span>
-                <span class="ko-kr">요네/Yone 음악 이용 라이센스</span>
-            </h2>
+            <div id="pageTitle">
+                <h2>
+                    <span class="ja-jp">よね/Yone 楽曲利用ライセンス</span>
+                    <span class="en-us">License to Use Yone Musics</span>
+                    <span class="ko-kr">요네/Yone 음악 이용 라이센스</span>
+                </h2>
 
-            <ol id="body" class="ja-jp">
+                <p style="text-align: center;">
+                    <span class="ja-jp">本文</span>
+                    <span class="en-us">Body Text</span>
+                    <span class="ko-kr">본문</span>
+                </p>
+            </div>
+
+
+            <ol id="body">
                 <li>
                     <h3>
-                        <span class="ja-jp">1. 概要</span>
-                        <span class="en-us">1. Overview</span>
+                        <span>1. 概要</span>
                     </h3>
 
                     <p>
-                        <span class="ja-jp">
+                        <span>
                             この「よね/Yone 楽曲利用ライセンス」は、よね/Yone が制作、配布する楽曲の利用をユーザーに許諾し、その利用条件を定めるものです。
                         </span>
                     </p>
@@ -166,14 +447,13 @@
 
                 <li>
                     <h3>
-                        <span class="ja-jp">2. 本ライセンスの適用範囲</span>
-                        <span class="en-us">2. Scope of this License</span>
+                        <span>2. 本ライセンスの適用範囲</span>
                     </h3>
 
                     <ol>
                         <li>
                             <p>
-                                <span class="ja-jp">
+                                <span>
                                     ユーザーは、当楽曲を利用するには本ライセンスに同意し、その定めにしたがって利用するものとします。
                                 </span>
                             </p>
@@ -181,7 +461,7 @@
 
                         <li>
                             <p>
-                                <span class="ja-jp">
+                                <span>
                                     本ライセンスは、ユーザーが当楽曲を利用した時点で同意したものとし、適用されます。
                                 </span>
                             </p>
@@ -191,14 +471,13 @@
 
                 <li>
                     <h3>
-                        <span class="ja-jp">3. 許諾事項と利用条件</span>
-                        <span class="en-us">3. Terms of use</span>
+                        <span>3. 許諾事項と利用条件</span>
                     </h3>
 
                     <ol>
                         <li>
                             <p>
-                                <span class="ja-jp">
+                                <span>
                                     各当楽曲のページに追加利用条件の記載がありますので、必ずご確認ください。<br>
                                     <strong>以下の許諾事項と利用条件は、各当楽曲の追加利用条件に明示されていない限り適用されます。各当楽曲の追加利用条件に別途条件、禁止事項が記載されている場合は、そちらが本ライセンスよりも優先して適用されます。</strong><br>
                                 </span>
@@ -207,15 +486,15 @@
 
                         <li>
                             <p>
-                                <span class="ja-jp">
-                                    UGCサービス上（YouTube、ニコニコ、bilibili (哔哩哔哩) 等無償閲覧可能なサービス）で利用できます。
+                                <span>
+                                    UGCサービス上（YouTube、Twitch、ニコニコ、bilibili (哔哩哔哩) 等無償閲覧可能なサービス）で利用できます。
                                 </span>
                             </p>
                         </li>
 
                         <li>
                             <p>
-                                <span class="ja-jp">
+                                <span>
                                     コンサート・イベント等での演奏で利用できます。
                                 </span>
                             </p>
@@ -223,7 +502,7 @@
 
                         <li>
                             <p>
-                                <span class="ja-jp">
+                                <span>
                                     映画上映、ビデオ上映、各種施設でのBGM再生で利用できます。
                                 </span>
                             </p>
@@ -231,7 +510,7 @@
 
                         <li>
                             <p>
-                                <span class="ja-jp">
+                                <span>
                                     営利（商用）・非営利、また個人・法人を問わず利用できます。<br>
                                 </span>
                             </p>
@@ -239,7 +518,7 @@
 
                         <li>
                             <p>
-                                <span class="ja-jp">
+                                <span>
                                     <strong>すべての当楽曲において、クレジット表記が必須です。</strong><br>
                                     記載方法については 4. クレジット表記の方法 をご確認ください。
                                 </span>
@@ -248,7 +527,7 @@
 
                         <li>
                             <p>
-                                <span class="ja-jp">
+                                <span>
                                     購入でダウンロードできる楽曲と、無料でダウンロードできる楽曲があります。<br>
                                     <a href="./releases/">楽曲一覧</a> にフリーダウンロードと記載されている楽曲は、本ウェブサイトから無料でダウンロード可能です。
                                 </span>
@@ -257,17 +536,18 @@
 
                         <li>
                             <p>
-                                <span class="ja-jp">
+                                <span>
                                     各当楽曲の追加利用条件に、利用に際して当方に連絡（利用申請）する必要があるかどうかの記載がありますので、必ずご確認ください。<br>
                                     <strong>利用申請不要と記載されている場合は、連絡せず利用できます。</strong><br>
-                                    申請は <a href="https://www.yoneyo.com/#contact" target="_blank" rel="noopener noreferrer">こちら</a> からお願いいたします。
+                                    申請は <a href="https://www.yoneyo.com/#contact" target="_blank"
+                                        rel="noopener noreferrer">こちら</a> からお願いいたします。
                                 </span>
                             </p>
                         </li>
 
                         <li>
                             <p>
-                                <span class="ja-jp">
+                                <span>
                                     著作権使用料、原盤権使用料、その他著作隣接権使用料等の費用は無償です。<br>
                                     ただし、利用申請が必要な楽曲、およびUGCサービス以外で配信、販売をする場合は要相談となります。
                                 </span>
@@ -276,16 +556,17 @@
 
                         <li>
                             <p>
-                                <span class="ja-jp">
+                                <span>
                                     二次創作楽曲は UGCサービス上 に限り配信可能です。<br>
-                                    UGCサービス以外で配信、販売したい場合は <a href="https://www.yoneyo.com/#contact" target="_blank" rel="noopener noreferrer">お問い合わせ</a> ください。
+                                    UGCサービス以外で配信、販売したい場合は <a href="https://www.yoneyo.com/#contact" target="_blank"
+                                        rel="noopener noreferrer">お問い合わせ</a> ください。
                                 </span>
                             </p>
                         </li>
 
                         <li>
                             <p>
-                                <span class="ja-jp">
+                                <span>
                                     当楽曲では、利用が可能なものについて「フリー楽曲」「フリーBGM」等の記載をすることがありますが、「本ライセンスの範囲で自由に利用ができる」および「著作権使用料なし（ロイヤリティフリー）」という意味であり、「パブリックドメイン（著作権放棄物）」「著作権フリー」「無料ダウンロード」を表すものではありません。<br>
                                 </span>
                             </p>
@@ -293,8 +574,9 @@
 
                         <li>
                             <p>
-                                <span class="ja-jp">
-                                    ご不明点等は、お気軽に <a href="https://www.yoneyo.com/#contact" target="_blank" rel="noopener noreferrer">お問い合わせ</a> ください。
+                                <span>
+                                    ご不明点等は、お気軽に <a href="https://www.yoneyo.com/#contact" target="_blank"
+                                        rel="noopener noreferrer">お問い合わせ</a> ください。
                                 </span>
                             </p>
                         </li>
@@ -303,14 +585,13 @@
 
                 <li>
                     <h3>
-                        <span class="ja-jp">4. クレジット表記の方法</span>
-                        <span class="en-us">4. How to display the copyright (credits)</span>
+                        <span>4. クレジット表記の方法</span>
                     </h3>
 
                     <ol>
                         <li class="section-line">
                             <h4>
-                                <span class="ja-jp">
+                                <span>
                                     【必須】<br>
                                     UGCサービス上で利用の場合は、「著作権名」と「利用するすべての楽曲名」を、タイトル、動画内、概要欄・説明欄のいずれかに表記してください。<br>
                                     各種施設で利用の場合は、イベントポスター、施設内ポスター等適切な場所に表記してください。
@@ -320,7 +601,7 @@
                             <ul>
                                 <li>
                                     <p>
-                                        <span class="ja-jp">
+                                        <span>
                                             著作者名
                                         </span>
                                     </p>
@@ -334,17 +615,17 @@
 
                         <li class="section-line">
                             <h4>
-                                <span class="ja-jp">
+                                <span>
                                     【任意】<br>
-                                    可能であれば表記して頂けるとありがたいです。
+                                    可能であれば表記してください。
                                 </span>
                             </h4>
 
                             <ul>
                                 <li>
                                     <p>
-                                        <span class="ja-jp">
-                                            利用する楽曲の、本ウェブサイト上のURLリンク（ポスターの場合はQRコードでも可）
+                                        <span>
+                                            利用する楽曲の、本ウェブサイト上のURLまたはそのハイパーリンク（ポスターなどの場合はQRコードでも可）
                                         </span>
                                     </p>
                                 </li>
@@ -353,13 +634,13 @@
 
                         <li>
                             <h4>
-                                <span class="ja-jp">
+                                <span>
                                     YouTube概要欄等での表記例
                                 </span>
                             </h4>
 
                             <p>
-                                <span class="ja-jp block-line">
+                                <span class="block-line">
                                     ■ 使用音楽<br>
                                     よね/Yone - (楽曲名)<br>
                                     https://musics.yoneyo.com/releases/(利用する楽曲のURL)/<br>
@@ -372,14 +653,13 @@
 
                 <li>
                     <h3>
-                        <span class="ja-jp">5. 禁止事項</span>
-                        <span class="en-us">5. Prohibitions</span>
+                        <span>5. 禁止事項</span>
                     </h3>
 
                     <ol>
                         <li>
                             <p>
-                                <span class="ja-jp">
+                                <span>
                                     当方は、ユーザーが当楽曲を利用するにあたって、無断で以下の行為を行うことを禁止します。<br>
                                     ユーザーが無断で以下の行為を行った場合、当方は当該ユーザーに対して本ライセンスの取り消しを行うことができ、公開停止、収益化の停止等、利用停止の措置を講じることができます。
                                 </span>
@@ -388,7 +668,7 @@
                             <ol>
                                 <li>
                                     <p>
-                                        <span class="ja-jp">
+                                        <span>
                                             法令、裁判所の判決、もしくは命令、または法令上拘束力のある行政措置に反する行為
                                         </span>
                                     </p>
@@ -396,7 +676,7 @@
 
                                 <li>
                                     <p>
-                                        <span class="ja-jp">
+                                        <span>
                                             公の秩序、または善良の風俗に反する行為
                                         </span>
                                     </p>
@@ -404,7 +684,7 @@
 
                                 <li>
                                     <p>
-                                        <span class="ja-jp">
+                                        <span>
                                             当方、および第三者の著作権、商標権、特許権等の知的財産権、名誉権、プライバシー権、肖像権、人格権、もしくはその他法令上、または契約上の権利を侵害する行為
                                         </span>
                                     </p>
@@ -412,7 +692,7 @@
 
                                 <li>
                                     <p>
-                                        <span class="ja-jp">
+                                        <span>
                                             各当楽曲の追加利用条件に反する行為
                                         </span>
                                     </p>
@@ -420,7 +700,7 @@
 
                                 <li>
                                     <p>
-                                        <span class="ja-jp">
+                                        <span>
                                             適切なクレジット表記がされていない利用
                                         </span>
                                     </p>
@@ -428,7 +708,7 @@
 
                                 <li>
                                     <p>
-                                        <span class="ja-jp">
+                                        <span>
                                             当楽曲、および二次創作楽曲をJASRAC等の著作権管理団体に登録する行為
                                         </span>
                                     </p>
@@ -436,7 +716,7 @@
 
                                 <li>
                                     <p>
-                                        <span class="ja-jp">
+                                        <span>
                                             当楽曲、および二次創作楽曲をYouTube Content IDに登録する行為
                                         </span>
                                     </p>
@@ -444,17 +724,18 @@
 
                                 <li>
                                     <p>
-                                        <span class="ja-jp">
+                                        <span>
                                             当楽曲、および二次創作楽曲を、UGCサービス以外で配信、販売する行為<br>
                                             例）Apple MusicやSpotify等での配信、CDやオルゴール等有体物の販売等を含みますがこれに限られません。<br>
-                                            UGCサービス以外で配信、販売したい場合は <a href="https://www.yoneyo.com/#contact" target="_blank" rel="noopener noreferrer">お問い合わせ</a> ください。<br>
+                                            UGCサービス以外で配信、販売したい場合は <a href="https://www.yoneyo.com/#contact"
+                                                target="_blank" rel="noopener noreferrer">お問い合わせ</a> ください。<br>
                                         </span>
                                     </p>
                                 </li>
 
                                 <li>
                                     <p>
-                                        <span class="ja-jp">
+                                        <span>
                                             当楽曲を自らの著作物として主張する行為
                                         </span>
                                     </p>
@@ -466,14 +747,13 @@
 
                 <li>
                     <h3>
-                        <span class="ja-jp">6. 免責事項</span>
-                        <span class="en-us">6. Disclaimer</span>
+                        <span>6. 免責事項</span>
                     </h3>
 
                     <ol>
                         <li>
                             <p>
-                                <span class="ja-jp">
+                                <span>
                                     当方は、当楽曲の利用によってユーザーに生じた損害の責任は一切負いません。
                                 </span>
                             </p>
@@ -481,7 +761,7 @@
 
                         <li>
                             <p>
-                                <span class="ja-jp">
+                                <span>
                                     当方は、ユーザーに事前に通知することなく、本ウェブサイトや当楽曲の提供、配布等の内容を変更または停止でき、それに伴うユーザーへの損害の責任は一切負いません。
                                 </span>
                             </p>
@@ -491,14 +771,13 @@
 
                 <li>
                     <h3>
-                        <span class="ja-jp">7. 用語の定義</span>
-                        <span class="en-us">7. Definition of Terms</span>
+                        <span>7. 用語の定義</span>
                     </h3>
 
                     <ol>
                         <li>
                             <p>
-                                <span class="ja-jp">
+                                <span>
                                     「本ライセンス」とは、この「よね/Yone 楽曲利用ライセンス」をいいます。
                                 </span>
                             </p>
@@ -506,7 +785,7 @@
 
                         <li>
                             <p>
-                                <span class="ja-jp">
+                                <span>
                                     「当楽曲」とは、当方が作詞作曲し、配布するすべての楽曲をいいます。
                                 </span>
                             </p>
@@ -514,7 +793,7 @@
 
                         <li>
                             <p>
-                                <span class="ja-jp">
+                                <span>
                                     「当方」とは、本ウェブサイト、および当楽曲を提供する「よね/Yone」をいいます。
                                 </span>
                             </p>
@@ -522,7 +801,7 @@
 
                         <li>
                             <p>
-                                <span class="ja-jp">
+                                <span>
                                     「ユーザー」とは、当楽曲を利用するすべての方をいいます。
                                 </span>
                             </p>
@@ -530,7 +809,7 @@
 
                         <li>
                             <p>
-                                <span class="ja-jp">
+                                <span>
                                     「本ウェブサイト」とは、当方が提供するこのウェブサイトをいいます。
                                 </span>
                             </p>
@@ -538,7 +817,7 @@
 
                         <li>
                             <p>
-                                <span class="ja-jp">
+                                <span>
                                     「BGM」とは、背景音楽（英：Back Ground Music）をいいます。
                                 </span>
                             </p>
@@ -546,16 +825,16 @@
 
                         <li>
                             <p>
-                                <span class="ja-jp">
+                                <span>
                                     「UGCサービス」とは、ユーザー投稿型の動画や音声を無償で閲覧できるインターネットサービスをいいます。<br>
-                                    　例）YouTube、ニコニコ動画、bilibili (哔哩哔哩) 等<br>
+                                    　例）YouTube、Twitch、ニコニコ動画、bilibili (哔哩哔哩) 等<br>
                                 </span>
                             </p>
                         </li>
 
                         <li>
                             <p>
-                                <span class="ja-jp">
+                                <span>
                                     「二次創作楽曲」とは、当楽曲を原曲として利用し、ユーザーがカバー、アレンジを行って制作した曲をいいます。
                                 </span>
                             </p>
@@ -565,14 +844,13 @@
 
                 <li>
                     <h3>
-                        <span class="ja-jp">8. 本ライセンスの変更</span>
-                        <span class="en-us">8. Modification of this License</span>
+                        <span>8. 本ライセンスの変更</span>
                     </h3>
 
                     <ol>
                         <li>
                             <p>
-                                <span class="ja-jp">
+                                <span>
                                     当方は、ユーザーに個別の同意を得ることなく、本ライセンスを変更することができます。<br>
                                 </span>
                             </p>
@@ -580,7 +858,7 @@
 
                         <li>
                             <p>
-                                <span class="ja-jp">
+                                <span>
                                     変更後にダウンロードした楽曲については、変更後の本ライセンスが適用されます。
                                 </span>
                             </p>
@@ -590,14 +868,13 @@
 
                 <li>
                     <h3>
-                        <span class="ja-jp">9. 協議解決、準拠法、裁判管轄</span>
-                        <span class="en-us">9. Applicable law and jurisdiction</span>
+                        <span>9. 協議解決、準拠法、裁判管轄</span>
                     </h3>
 
                     <ol>
                         <li>
                             <p>
-                                <span class="ja-jp">
+                                <span>
                                     本ライセンスの解釈に疑義が生じた場合、または本ライセンスに定めのない事項については、当方とユーザーは、誠意をもって協議し解決します。
                                 </span>
                             </p>
@@ -605,7 +882,7 @@
 
                         <li>
                             <p>
-                                <span class="ja-jp">
+                                <span>
                                     本ライセンスの正文は日本語とし、日本法において解釈されるものとします。<br>
                                 </span>
                             </p>
@@ -613,7 +890,7 @@
 
                         <li>
                             <p>
-                                <span class="ja-jp">
+                                <span>
                                     本ウェブサイト、および当楽曲を利用したことに起因する、ユーザーと当方との間に生じた一切の紛争については、東京地方裁判所、または東京簡易裁判所を第一審の専属的合意管轄裁判所とします。
                                 </span>
                             </p>
@@ -625,13 +902,25 @@
             <div class="after">
                 <p id="endWord">
                     <span class="ja-jp">
-                        以上
+                        以上 これをライセンス本文とします。
+                    </span>
+                    <span class="en-us">
+                        This is the body text of the licence.
+                    </span>
+                    <span class="ko-kr">
+                        이상. 이것을 라이센스 본문으로 합니다.
                     </span>
                 </p>
 
                 <p id="update">
                     <span class="ja-jp">
                         2024年6月3日 更新
+                    </span>
+                    <span class="en-us">
+                        June 3, 2024 Updated
+                    </span>
+                    <span class="ko-kr">
+                        2024년 6월 3일 갱신
                     </span>
                 </p>
             </div>
