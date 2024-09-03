@@ -1,16 +1,17 @@
 # Yone Musics Website
 
+[→ 日本語](./README_JP.md)
+
 ## Overview
 
-Yone's Musics Website.  
-よね/Yone の楽曲ウェブサイトです。
+Yone's Musics Website.
 
 ## Usage
 
-`src/pages/` をデプロイします。
+Deploy directory `src/pages/`.
 
 ## LICENSE
 
-**No Licensed. No modification or reproduction of any kind is permitted.**
+No Licensed
 
-Copyright (c) よね/Yone
+Copyright (C) よね/Yone
