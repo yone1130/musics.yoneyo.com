@@ -1,15 +1,15 @@
 /*
  *
  * Yone Musics Website
- * 
+ *
  * Copyright (c) よね/Yone
- * 
+ *
  * No modification or reproduction of any kind is permitted.
  * 改変や複製を一切禁じます。
- * 
+ *
  */
 
-'use strict';
+"use strict";
 
 (() => {
     const Page = class {
@@ -17,34 +17,35 @@
             return ["ja-jp", "en-us", "ko-kr"];
         }
 
-
         constructor() {
             this.getClientLang();
             this.changePageLang(this.pageLang);
             this.initPage();
         }
 
-
         getClientLang() {
             const langsMap = {
-                "ja": "ja-jp",
-                "en": "en-us",
-                "ko": "ko-kr"
-            }
+                ja: "ja-jp",
+                en: "en-us",
+                ko: "ko-kr",
+            };
 
             const defaultLang = "en-us";
 
             this.pageLang = localStorage.getItem("lang");
 
-            if (this.pageLang !== null) { return; }
+            if (this.pageLang !== null) {
+                return;
+            }
 
-            const userLang = (navigator.language || navigator.userLanguage).toLowerCase();
+            const userLang = (
+                navigator.language || navigator.userLanguage
+            ).toLowerCase();
 
             this.pageLang = langsMap[userLang] || defaultLang;
 
             localStorage.setItem("lang", this.pageLang);
         }
-
 
         changePageLang(lang) {
             switch (lang) {
@@ -82,7 +83,6 @@
             }
         }
 
-
         initPage() {
             $("header").load("./components/header.html");
             $("footer").load("./components/footer.html");
@@ -97,15 +97,13 @@
                 $("#headerLangsMenu").toggleClass("opened");
             });
 
-            this.langs.forEach(lang => {
-                $(document).on('click', `#headerLangsLists .${lang}`, () => {
+            this.langs.forEach((lang) => {
+                $(document).on("click", `#headerLangsLists .${lang}`, () => {
                     this.changePageLang(lang);
                     $("#headerLangsButton").toggleClass("opened");
                     $("#headerLangsMenu").toggleClass("opened");
-                }
-                );
-            }
-            );
+                });
+            });
 
             $(document).on("click", "#downloadAgree", function () {
                 if ($("#downloadAgreeCheckbox").prop("checked") === true) {
@@ -120,8 +118,7 @@
                 open(dlPath, "_blank");
             });
         }
-    }
-
+    };
 
     $(() => new Page());
 })();

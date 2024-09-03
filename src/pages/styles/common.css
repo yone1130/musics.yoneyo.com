@@ -11,10 +11,9 @@
 
 */
 
-@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200');
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap');
-
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+JP&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap");
 
 :root {
     --page-font-size: 14px;
@@ -55,7 +54,7 @@ body {
 body {
     margin-top: var(--header-height);
     background-color: var(--body-bgcolor);
-    font-family: 'Noto Sans JP', sans-serif;
+    font-family: "Noto Sans JP", sans-serif;
     font-weight: 400;
     color: var(--body-color);
 }
@@ -90,17 +89,17 @@ body.ko-kr *.inline.ko-kr {
     display: inline;
 }
 
-body.ja-jp #headerLangsLists>.ja-jp {
+body.ja-jp #headerLangsLists > .ja-jp {
     background-color: #000000d0;
     color: #ffffffff;
 }
 
-body.en-us #headerLangsLists>.en-us {
+body.en-us #headerLangsLists > .en-us {
     background-color: #000000d0;
     color: #ffffffff;
 }
 
-body.ko-kr #headerLangsLists>.ko-kr {
+body.ko-kr #headerLangsLists > .ko-kr {
     background-color: #000000d0;
     color: #ffffffff;
 }
@@ -125,11 +124,7 @@ button {
 }
 
 .material-symbols-outlined {
-    font-variation-settings:
-        'FILL' 0,
-        'wght' 400,
-        'GRAD' 0,
-        'opsz' 24;
+    font-variation-settings: "FILL" 0, "wght" 400, "GRAD" 0, "opsz" 24;
     font-size: 1rem;
 }
 
@@ -137,12 +132,12 @@ button {
     display: inline-flex;
     align-items: center;
     border-radius: 2rem;
-    padding: .5em 2em;
+    padding: 0.5em 2em;
     background-color: #404040ff;
     font-size: 1.2rem;
     text-decoration: none;
     color: #ffffffff;
-    transition: all .3s;
+    transition: all 0.3s;
     user-select: none;
 }
 
@@ -151,7 +146,7 @@ button {
     color: var(--body-color);
 }
 
-.button>.material-symbols-outlined {
+.button > .material-symbols-outlined {
     font-size: 1.5rem;
 }
 
@@ -193,7 +188,7 @@ header {
     height: var(--header-logo-height);
 }
 
-#headerLogo>.wrapper {
+#headerLogo > .wrapper {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -204,7 +199,7 @@ header {
     padding-right: var(--header-padding-left-right);
 }
 
-#headerLogo>.wrapper>.logo {
+#headerLogo > .wrapper > .logo {
     display: flex;
     align-items: center;
     height: 100%;
@@ -216,7 +211,7 @@ header {
 }
 
 #headerIcon,
-#headerIcon>* {
+#headerIcon > * {
     height: calc(var(--header-logo-height) * 0.8);
     border-radius: 0.625rem;
 }
@@ -231,7 +226,7 @@ header {
     border-radius: 0.625rem;
     background-color: #e8e8e8ff;
     font-size: calc(var(--header-logo-height) * 0.15);
-    transition: all .3s;
+    transition: all 0.3s;
 }
 
 #headerLangsButton.opened {
@@ -239,8 +234,8 @@ header {
     color: #ffffffff;
 }
 
-#headerLangsButton>.material-symbols-outlined {
-    font-size: calc(var(--header-logo-height) * .4);
+#headerLangsButton > .material-symbols-outlined {
+    font-size: calc(var(--header-logo-height) * 0.4);
 }
 
 #headerNav {
@@ -252,7 +247,7 @@ header {
     background-color: var(--header-nav-bgcolor);
 }
 
-#headerNav>.wrapper {
+#headerNav > .wrapper {
     width: 100%;
     max-width: var(--header-max-width);
     height: 100%;
@@ -267,17 +262,17 @@ header {
     color: #ffffffff;
 }
 
-#headerNavLists>li {
+#headerNavLists > li {
     display: flex;
     align-items: center;
     justify-content: center;
     width: 10rem;
     height: 100%;
     border-right: 1px solid #808080ff;
-    transition: all .3s;
+    transition: all 0.3s;
 }
 
-#headerNavLists>li:hover {
+#headerNavLists > li:hover {
     background-color: #ffffff40;
 }
 
@@ -307,19 +302,19 @@ header {
     z-index: calc(var(--header-nav-zindex) + 1);
 }
 
-#headerNavButton>.material-symbols-outlined {
+#headerNavButton > .material-symbols-outlined {
     font-size: calc(var(--header-nav-button-size) * 0.6);
 }
 
-#headerNavButton>.close {
+#headerNavButton > .close {
     display: none;
 }
 
-#headerNavButton.opened>.open {
+#headerNavButton.opened > .open {
     display: none;
 }
 
-#headerNavButton.opened>.close {
+#headerNavButton.opened > .close {
     display: inline-block;
 }
 
@@ -330,7 +325,7 @@ header {
     width: 100vw;
     height: calc(100vh - var(--header-logo-height));
     background-color: #e0e0e0ff;
-    transition: all .3s;
+    transition: all 0.3s;
     z-index: var(--header-langs-menu-zindex);
 }
 
@@ -338,7 +333,7 @@ header {
     top: calc(var(--header-logo-height));
 }
 
-#headerLangsMenu>.wrapper {
+#headerLangsMenu > .wrapper {
     width: calc(100% - 20vw);
     height: calc(100% - 4rem);
     padding: 2rem 10vw;
@@ -351,7 +346,7 @@ header {
     color: var(--body-color);
 }
 
-#headerLangsLists>li {
+#headerLangsLists > li {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -360,10 +355,10 @@ header {
     margin-bottom: 1rem;
     border: none;
     border-radius: 1rem;
-    transition: all .3s;
+    transition: all 0.3s;
 }
 
-#headerLangsLists>li:hover {
+#headerLangsLists > li:hover {
     background-color: #00000060;
 }
 
@@ -381,7 +376,7 @@ footer {
     z-index: var(--footer-zindex);
 }
 
-footer>.wrapper {
+footer > .wrapper {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -390,14 +385,15 @@ footer>.wrapper {
     height: 100%;
 }
 
-
 @media (max-width: 768px) {
     body {
         margin-top: var(--header-logo-height);
     }
 
     main {
-        min-height: calc(100vh - var(--header-logo-height) - var(--footer-height));
+        min-height: calc(
+            100vh - var(--header-logo-height) - var(--footer-height)
+        );
     }
 
     header {
@@ -416,7 +412,7 @@ footer>.wrapper {
         width: 100vw;
         height: calc(100vh - var(--header-logo-height));
         background-color: #000000ff;
-        transition: all .3s;
+        transition: all 0.3s;
         z-index: var(--header-nav-zindex);
     }
 
@@ -424,7 +420,7 @@ footer>.wrapper {
         left: 0;
     }
 
-    #headerNav>.wrapper {
+    #headerNav > .wrapper {
         width: calc(100% - 20vw);
         height: calc(100% - 4rem);
         padding: 2rem 10vw;
@@ -434,7 +430,7 @@ footer>.wrapper {
         flex-direction: column;
     }
 
-    #headerNavLists>li {
+    #headerNavLists > li {
         width: 100%;
         height: 3rem;
         margin-bottom: 1rem;
