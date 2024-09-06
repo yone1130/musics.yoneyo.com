@@ -4,14 +4,16 @@
 
 ## Overview
 
-Yone's Musics Website.
+Yone's musics website.
+
+Published at https://musics.yoneyo.com/ .
 
 ## Usage
 
 Deploy directory `src/pages/`.
 
-## LICENSE
+## License
 
-No Licensed
+No licensed.
 
 Copyright (C) よね/Yone
