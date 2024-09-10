@@ -10,373 +10,335 @@
 -->
 <!DOCTYPE html>
 <html lang="ja-JP">
-    <head prefix="og: https://ogp.me/ns#">
-        <!-- Meta -->
-        <meta charset="UTF-8" />
-        <title>Moonrise | よね/Yone Musics</title>
-        <meta name="description" content="よね/Yone の楽曲サイトです。" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-        <!-- OGP -->
-        <meta
-            property="og:url"
-            content="https://musics.yoneyo.com/releases/moonrise/"
-        />
-        <meta property="og:type" content="website" />
-        <meta property="og:site_name" content="よね/Yone Musics" />
-        <meta property="og:title" content="Moonrise" />
-        <meta
-            property="og:description"
-            content="よね/Yone の楽曲サイトです。"
-        />
-        <meta
-            property="og:image"
-            content="https://cdn.yoneyo.com/images/albums/the_beginning/yone_the_beginning_jacket_image.png"
-        />
+<head prefix="og: https://ogp.me/ns#">
+    <!-- Meta -->
+    <meta charset="UTF-8">
+    <title>Moonrise | よね/Yone Musics</title>
+    <meta name="description" content="よね/Yone の楽曲サイトです。">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-        <!-- Base -->
-        <base href="https://musics.yoneyo.com/" />
+    <!-- OGP -->
+    <meta property="og:url" content="https://musics.yoneyo.com/releases/moonrise/">
+    <meta property="og:type" content="website">
+    <meta property="og:site_name" content="よね/Yone Musics">
+    <meta property="og:title" content="Moonrise">
+    <meta property="og:description" content="よね/Yone の楽曲サイトです。">
+    <meta property="og:image"
+        content="https://cdn.yoneyo.com/images/albums/the_beginning/yone_the_beginning_jacket_image.png">
 
-        <!-- Manifest -->
-        <link rel="manifest" href="./manifest.json" />
+    <!-- Base -->
+    <base href="https://musics.yoneyo.com/">
 
-        <!-- Icon -->
-        <link
-            rel="icon"
-            href="https://cdn.yoneyo.com/images/yone_logos/yone_icon.png"
-            type="image/png"
-        />
+    <!-- Manifest -->
+    <link rel="manifest" href="./manifest.json">
 
-        <!-- Styles -->
-        <link rel="stylesheet" href="./styles/common.css" />
+    <!-- Icon -->
+    <link rel="icon" href="https://cdn.yoneyo.com/images/yone_logos/yone_icon.png" type="image/png">
 
-        <style>
-            .sectionTitle {
-                margin: 3em 0;
-            }
+    <!-- Styles -->
+    <link rel="stylesheet" href="./styles/common.css">
 
+    <style>
+        .sectionTitle {
+            margin: 3em 0;
+        }
+
+        #hero {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 100%;
+            padding: 2rem 0;
+        }
+
+        #hero>* {
+            width: 50%;
+        }
+
+        #albumJacketImg {
+            display: inline-flex;
+            justify-content: flex-end;
+            margin: 2rem;
+        }
+
+        #albumJacketImg>img {
+            --size: 24rem;
+            width: var(--size);
+            height: var(--size);
+        }
+
+        #albumInfo {
+            display: inline-flex;
+            flex-direction: column;
+            align-items: flex-start;
+            margin: 2rem;
+            font-family: "Poppins", sans-serif;
+            font-weight: bold;
+        }
+
+        #albumName {
+            font-size: 2rem;
+        }
+
+        #links {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 2rem;
+        }
+
+        #links>.button {
+            margin: 1rem;
+        }
+
+        #use {
+            padding: 2rem 10vw;
+        }
+
+        #usingTerms li {
+            margin: 1rem 0;
+        }
+
+        #usingTerms .listTitle {
+            margin: 1em 0;
+        }
+
+        #usingTerms .listBody {
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        table tbody tr:nth-of-type(odd) {
+            background-color: #00000040;
+        }
+
+        table tbody tr:nth-of-type(even) {
+            background-color: #00000020;
+        }
+
+        table tbody th,
+        table tbody td {
+            min-width: 5em;
+            padding: 0.5em 2em;
+        }
+
+        #download {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        #downloadAgree {
+            display: inline-flex;
+            align-items: center;
+            padding: 1rem;
+        }
+
+        #downloadAgreeCheckbox {
+            margin-right: 0.5rem;
+            width: 2rem;
+            height: 2rem;
+        }
+
+        #downloadAgreeLabel {
+            display: inline;
+        }
+
+        #noticeToUse {
+            margin-top: 2rem;
+            text-align: center;
+        }
+
+        #downloadButton {
+            border: 1px solid #00000000;
+            margin: 2rem 0;
+        }
+
+        #downloadButton:disabled {
+            border: 1px solid #808080ff;
+            background-color: #00000000;
+            color: #808080ff;
+            cursor: not-allowed;
+        }
+
+        #copyright {
+            padding: 2rem 10vw;
+        }
+
+        #copyright table {
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        @media (max-width: 768px) {
             #hero {
-                display: flex;
-                justify-content: center;
-                align-items: center;
-                width: 100%;
-                padding: 2rem 0;
+                flex-direction: column;
             }
 
-            #hero > * {
-                width: 50%;
+            #hero>* {
+                width: 100%;
             }
 
             #albumJacketImg {
-                display: inline-flex;
-                justify-content: flex-end;
-                margin: 2rem;
+                justify-content: center;
             }
 
-            #albumJacketImg > img {
-                --size: 24rem;
-                width: var(--size);
-                height: var(--size);
+            #albumJacketImg>img {
+                --size: 75vw;
+                height: 100%;
             }
 
             #albumInfo {
-                display: inline-flex;
-                flex-direction: column;
-                align-items: flex-start;
-                margin: 2rem;
-                font-family: "Poppins", sans-serif;
-                font-weight: bold;
-            }
-
-            #albumName {
-                font-size: 2rem;
-            }
-
-            #links {
-                display: flex;
-                flex-direction: column;
                 align-items: center;
-                padding: 2rem;
-            }
-
-            #links > .button {
-                margin: 1rem;
-            }
-
-            #use {
-                padding: 2rem 10vw;
-            }
-
-            #usingTerms li {
-                margin: 1rem 0;
-            }
-
-            #usingTerms .listTitle {
-                margin: 1em 0;
-            }
-
-            #usingTerms .listBody {
-                margin-left: auto;
-                margin-right: auto;
-            }
-
-            table tbody tr:nth-of-type(odd) {
-                background-color: #00000040;
-            }
-
-            table tbody tr:nth-of-type(even) {
-                background-color: #00000020;
-            }
-
-            table tbody th,
-            table tbody td {
-                min-width: 5em;
-                padding: 0.5em 2em;
-            }
-
-            #download {
-                display: flex;
-                flex-direction: column;
-                align-items: center;
-            }
-
-            #downloadAgree {
-                display: inline-flex;
-                align-items: center;
-                padding: 1rem;
-            }
-
-            #downloadAgreeCheckbox {
-                margin-right: 0.5rem;
-                width: 2rem;
-                height: 2rem;
-            }
-
-            #downloadAgreeLabel {
-                display: inline;
-            }
-
-            #noticeToUse {
-                margin-top: 2rem;
                 text-align: center;
             }
+        }
+    </style>
 
-            #downloadButton {
-                border: 1px solid #00000000;
-                margin: 2rem 0;
-            }
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-YE0H1WFLV9"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() {
+            dataLayer.push(arguments);
+        }
+        gtag("js", new Date());
 
-            #downloadButton:disabled {
-                border: 1px solid #808080ff;
-                background-color: #00000000;
-                color: #808080ff;
-                cursor: not-allowed;
-            }
+        gtag("config", "G-YE0H1WFLV9");
+    </script>
 
-            #copyright {
-                padding: 2rem 10vw;
-            }
+    <!-- Scripts -->
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"
+        integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
 
-            #copyright table {
-                margin-left: auto;
-                margin-right: auto;
-            }
+    <script>
+        const pageTitleLangs = {
+            "ja-JP": "Moonrise | よね/Yone Musics",
+            "en-US": "Moonrise | Yone Musics",
+            "ko-KR": "Moonrise | 요네/Yone Musics",
+        };
+    </script>
 
-            @media (max-width: 768px) {
-                #hero {
-                    flex-direction: column;
-                }
+    <script src="./scripts/common.js" type="module"></script>
+</head>
 
-                #hero > * {
-                    width: 100%;
-                }
+<body class="ja-jp">
+    <header></header>
 
-                #albumJacketImg {
-                    justify-content: center;
-                }
+    <main>
+        <section id="hero">
+            <div id="albumJacketImg">
+                <img class="ja-jp"
+                    src="https://cdn.yoneyo.com/images/yone_albums/moonrise/yone_music_moonrise_jacket_image.png"
+                    alt="Moonrise のジャケット画像">
+                <img class="en-us"
+                    src="https://cdn.yoneyo.com/images/yone_albums/moonrise/yone_music_moonrise_jacket_image.png"
+                    alt="Jacket picture of 'Moonrise'">
+                <img class="ko-kr"
+                    src="https://cdn.yoneyo.com/images/yone_albums/moonrise/yone_music_moonrise_jacket_image.png"
+                    alt="'Moonrise' 재킷 사진">
+            </div>
 
-                #albumJacketImg > img {
-                    --size: 75vw;
-                    height: 100%;
-                }
+            <div id="albumInfo">
+                <span id="albumName">Moonrise</span>
+            </div>
+        </section>
 
-                #albumInfo {
-                    align-items: center;
-                    text-align: center;
-                }
-            }
-        </style>
+        <section id="links">
+            <a class="button" href="https://big-up.style/bEpQeZIlsg" target="_blank" rel="noopener noreferrer">
+                <span class="ja-jp">この楽曲を聴く</span>
+                <span class="en-us">Listen to this music</span>
+                <span class="ko-kr">이 음악 듣기</span>
+            </a>
+        </section>
 
-        <!-- Google tag (gtag.js) -->
-        <script
-            async
-            src="https://www.googletagmanager.com/gtag/js?id=G-YE0H1WFLV9"
-        ></script>
-        <script>
-            window.dataLayer = window.dataLayer || [];
-            function gtag() {
-                dataLayer.push(arguments);
-            }
-            gtag("js", new Date());
+        <section id="use">
+            <h3 class="sectionTitle">
+                <span class="ja-jp">この楽曲を使う</span>
+                <span class="en-us">Use this music</span>
+                <span class="ko-kr">이 음악 이용</span>
+            </h3>
 
-            gtag("config", "G-YE0H1WFLV9");
-        </script>
-
-        <!-- Scripts -->
-        <script
-            src="https://code.jquery.com/jquery-3.7.1.min.js"
-            integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo="
-            crossorigin="anonymous"
-        ></script>
-
-        <script>
-            const pageTitleLangs = {
-                "ja-JP": "Moonrise | よね/Yone Musics",
-                "en-US": "Moonrise | Yone Musics",
-                "ko-KR": "Moonrise | 요네/Yone Musics",
-            };
-        </script>
-
-        <script src="./scripts/common.js" type="module"></script>
-    </head>
-
-    <body class="ja-jp">
-        <header></header>
-
-        <main>
-            <section id="hero">
-                <div id="albumJacketImg">
-                    <img
-                        class="ja-jp"
-                        src="https://cdn.yoneyo.com/images/yone_albums/moonrise/yone_music_moonrise_jacket_image.png"
-                        alt="Moonrise のジャケット画像"
-                    />
-                    <img
-                        class="en-us"
-                        src="https://cdn.yoneyo.com/images/yone_albums/moonrise/yone_music_moonrise_jacket_image.png"
-                        alt="Jacket picture of 'Moonrise'"
-                    />
-                    <img
-                        class="ko-kr"
-                        src="https://cdn.yoneyo.com/images/yone_albums/moonrise/yone_music_moonrise_jacket_image.png"
-                        alt="'Moonrise' 재킷 사진"
-                    />
+            <div class="sectionContent">
+                <div id="noticeToUse">
+                    <p>
+                        <span class="ja-jp">
+                            ご利用前に
+                            <a href="./license/">楽曲利用ライセンス</a>
+                            をお読みください。
+                        </span>
+                        <span class="en-us">
+                            Please read the
+                            <a href="./license/">License to Use Music</a>.
+                        </span>
+                        <span class="ko-kr">
+                            이용 시에는
+                            <a href="./license/">음악 이용 라이센스</a> 를
+                            읽어보시기 바랍니다.
+                        </span>
+                    </p>
                 </div>
 
-                <div id="albumInfo">
-                    <span id="albumName">Moonrise</span>
+                <div id="download">
+                    <button id="downloadButton" class="button" download href="https://big-up.style/bEpQeZIlsg">
+                        <span class="ja-jp">この楽曲をダウンロード（購入）</span>
+                        <span class="en-us">Download this music (Buy)</span>
+                        <span class="ko-kr">이 음악 다운로드 (구매)</span>
+                    </button>
                 </div>
-            </section>
+            </div>
+        </section>
 
-            <section id="links">
-                <a
-                    class="button"
-                    href="https://big-up.style/bEpQeZIlsg"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                >
-                    <span class="ja-jp">この楽曲を聴く</span>
-                    <span class="en-us">Listen to this music</span>
-                    <span class="ko-kr">이 음악 듣기</span>
-                </a>
-            </section>
+        <section id="copyright">
+            <h3 class="sectionTitle">
+                <span class="ja-jp">この楽曲の著作者、委託先など</span>
+                <span class="en-us">Copyrights and consignees of this music</span>
+                <span class="ko-kr">이 음악의 저작권, 위탁처 등</span>
+            </h3>
 
-            <section id="use">
-                <h3 class="sectionTitle">
-                    <span class="ja-jp">この楽曲を使う</span>
-                    <span class="en-us">Use this music</span>
-                    <span class="ko-kr">이 음악 이용</span>
-                </h3>
+            <div class="sectionContent">
+                <table class="listBody">
+                    <tbody>
+                        <tr>
+                            <th>
+                                <span class="ja-jp">作曲・編曲</span>
+                                <span class="en-us">Compose/Arrange</span>
+                                <span class="ko-kr">작곡/편곡</span>
+                            </th>
+                            <td>よね/Yone</td>
+                        </tr>
 
-                <div class="sectionContent">
-                    <div id="noticeToUse">
-                        <p>
-                            <span class="ja-jp">
-                                ご利用前に
-                                <a href="./license/">楽曲利用ライセンス</a>
-                                をお読みください。
-                            </span>
-                            <span class="en-us">
-                                Please read the
-                                <a href="./license/">License to Use Music</a>.
-                            </span>
-                            <span class="ko-kr">
-                                이용 시에는
-                                <a href="./license/">음악 이용 라이센스</a> 를
-                                읽어보시기 바랍니다.
-                            </span>
-                        </p>
-                    </div>
+                        <tr>
+                            <th>
+                                <span class="ja-jp">原盤制作</span>
+                                <span class="en-us">Phonograms Produce</span>
+                                <span class="ko-kr">음반 제작</span>
+                            </th>
+                            <td>よね/Yone</td>
+                        </tr>
 
-                    <div id="download">
-                        <button
-                            id="downloadButton"
-                            class="button"
-                            download
-                            href="https://big-up.style/bEpQeZIlsg"
-                        >
-                            <span class="ja-jp"
-                                >この楽曲をダウンロード（購入）</span
-                            >
-                            <span class="en-us">Download this music (Buy)</span>
-                            <span class="ko-kr">이 음악 다운로드 (구매)</span>
-                        </button>
-                    </div>
-                </div>
-            </section>
+                        <tr>
+                            <th>
+                                <span class="ja-jp">
+                                    楽曲配信・販売委託先
+                                </span>
+                                <span class="en-us">
+                                    Music Distribution and Sales Consignee
+                                </span>
+                                <span class="ko-kr">
+                                    음원 유통 및 판매 위탁처
+                                </span>
+                            </th>
+                            <td>BIG UP!</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </section>
+    </main>
 
-            <section id="copyright">
-                <h3 class="sectionTitle">
-                    <span class="ja-jp">この楽曲の著作者、委託先など</span>
-                    <span class="en-us"
-                        >Copyrights and consignees of this music</span
-                    >
-                    <span class="ko-kr">이 음악의 저작권, 위탁처 등</span>
-                </h3>
+    <footer></footer>
+</body>
 
-                <div class="sectionContent">
-                    <table class="listBody">
-                        <tbody>
-                            <tr>
-                                <th>
-                                    <span class="ja-jp">作曲・編曲</span>
-                                    <span class="en-us">Compose/Arrange</span>
-                                    <span class="ko-kr">작곡/편곡</span>
-                                </th>
-                                <td>よね/Yone</td>
-                            </tr>
-
-                            <tr>
-                                <th>
-                                    <span class="ja-jp">原盤制作</span>
-                                    <span class="en-us"
-                                        >Phonograms Produce</span
-                                    >
-                                    <span class="ko-kr">음반 제작</span>
-                                </th>
-                                <td>よね/Yone</td>
-                            </tr>
-
-                            <tr>
-                                <th>
-                                    <span class="ja-jp">
-                                        楽曲配信・販売委託先
-                                    </span>
-                                    <span class="en-us">
-                                        Music Distribution and Sales Consignee
-                                    </span>
-                                    <span class="ko-kr">
-                                        음원 유통 및 판매 위탁처
-                                    </span>
-                                </th>
-                                <td>BIG UP!</td>
-                            </tr>
-                        </tbody>
-                    </table>
-                </div>
-            </section>
-        </main>
-
-        <footer></footer>
-    </body>
 </html>

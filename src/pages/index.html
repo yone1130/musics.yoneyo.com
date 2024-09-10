@@ -10,197 +10,173 @@
 -->
 <!DOCTYPE html>
 <html lang="ja-JP">
-    <head prefix="og: https://ogp.me/ns#">
-        <!-- Meta -->
-        <meta charset="UTF-8" />
-        <title>よね/Yone Musics</title>
-        <meta name="description" content="よね/Yone の楽曲サイトです。" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-        <!-- OGP -->
-        <meta property="og:url" content="https://musics.yoneyo.com/" />
-        <meta property="og:type" content="website" />
-        <meta property="og:site_name" content="よね/Yone Musics" />
-        <meta property="og:title" content="Home" />
-        <meta
-            property="og:description"
-            content="よね/Yone の楽曲サイトです。"
-        />
-        <meta
-            property="og:image"
-            content="https://cdn.yoneyo.com/images/yone_logos/yone_icon.png"
-        />
+<head prefix="og: https://ogp.me/ns#">
+    <!-- Meta -->
+    <meta charset="UTF-8">
+    <title>よね/Yone Musics</title>
+    <meta name="description" content="よね/Yone の楽曲サイトです。">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-        <!-- Base -->
-        <base href="https://musics.yoneyo.com/" />
+    <!-- OGP -->
+    <meta property="og:url" content="https://musics.yoneyo.com/">
+    <meta property="og:type" content="website">
+    <meta property="og:site_name" content="よね/Yone Musics">
+    <meta property="og:title" content="Home">
+    <meta property="og:description" content="よね/Yone の楽曲サイトです。">
+    <meta property="og:image" content="https://cdn.yoneyo.com/images/yone_logos/yone_icon.png">
 
-        <!-- Manifest -->
-        <link rel="manifest" href="./manifest.json" />
+    <!-- Base -->
+    <base href="https://musics.yoneyo.com/">
 
-        <!-- Icon -->
-        <link
-            rel="icon"
-            href="https://cdn.yoneyo.com/images/yone_logos/yone_icon.png"
-            type="image/png"
-        />
+    <!-- Manifest -->
+    <link rel="manifest" href="./manifest.json">
 
-        <!-- Styles -->
-        <link rel="stylesheet" href="./styles/common.css" />
+    <!-- Icon -->
+    <link rel="icon" href="https://cdn.yoneyo.com/images/yone_logos/yone_icon.png" type="image/png">
 
-        <style>
+    <!-- Styles -->
+    <link rel="stylesheet" href="./styles/common.css">
+
+    <style>
+        #latestAlbum {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 100%;
+            padding: 2rem 0;
+        }
+
+        #latestAlbum>* {
+            width: 50%;
+        }
+
+        #latestAlbumJacketImg {
+            display: inline-flex;
+            justify-content: flex-end;
+            margin: 2rem;
+        }
+
+        #latestAlbumJacketImg>img {
+            --size: 24rem;
+            width: var(--size);
+            height: var(--size);
+        }
+
+        #latestAlbumInfo {
+            display: inline-flex;
+            flex-direction: column;
+            align-items: flex-start;
+            margin: 2rem;
+            font-family: "Poppins", sans-serif;
+            font-weight: bold;
+        }
+
+        #latestAlbumName {
+            font-size: 2rem;
+        }
+
+        #latestAlbumLabel::after {
+            display: inline-block;
+            width: 3rem;
+            height: 2px;
+            /* margin-top: 0em; */
+            background-color: #808080ff;
+            content: "";
+        }
+
+        #latestAlbumMoreButton {
+            margin: 1rem 0;
+        }
+
+        @media (max-width: 768px) {
             #latestAlbum {
-                display: flex;
-                justify-content: center;
-                align-items: center;
-                width: 100%;
-                padding: 2rem 0;
+                flex-direction: column;
             }
 
-            #latestAlbum > * {
-                width: 50%;
+            #latestAlbum>* {
+                width: 100%;
             }
 
             #latestAlbumJacketImg {
-                display: inline-flex;
-                justify-content: flex-end;
-                margin: 2rem;
+                justify-content: center;
             }
 
-            #latestAlbumJacketImg > img {
-                --size: 24rem;
-                width: var(--size);
-                height: var(--size);
+            #latestAlbumJacketImg>img {
+                --size: 75vw;
+                height: 100%;
             }
 
             #latestAlbumInfo {
-                display: inline-flex;
-                flex-direction: column;
-                align-items: flex-start;
-                margin: 2rem;
-                font-family: "Poppins", sans-serif;
-                font-weight: bold;
+                align-items: center;
+                text-align: center;
             }
+        }
+    </style>
 
-            #latestAlbumName {
-                font-size: 2rem;
-            }
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-YE0H1WFLV9"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() {
+            dataLayer.push(arguments);
+        }
+        gtag("js", new Date());
 
-            #latestAlbumLabel::after {
-                display: inline-block;
-                width: 3rem;
-                height: 2px;
-                /* margin-top: 0em; */
-                background-color: #808080ff;
-                content: "";
-            }
+        gtag("config", "G-YE0H1WFLV9");
+    </script>
 
-            #latestAlbumMoreButton {
-                margin: 1rem 0;
-            }
+    <!-- Scripts -->
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"
+        integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
 
-            @media (max-width: 768px) {
-                #latestAlbum {
-                    flex-direction: column;
-                }
+    <script>
+        const pageTitleLangs = {
+            "ja-JP": "ホーム | よね/Yone Musics",
+            "en-US": "Home | Yone Musics",
+            "ko-KR": "홈 | 요네/Yone Musics",
+        };
+    </script>
 
-                #latestAlbum > * {
-                    width: 100%;
-                }
+    <script src="./scripts/common.js" type="module"></script>
+</head>
 
-                #latestAlbumJacketImg {
-                    justify-content: center;
-                }
+<body class="ja-jp">
+    <header></header>
 
-                #latestAlbumJacketImg > img {
-                    --size: 75vw;
-                    height: 100%;
-                }
+    <main>
+        <section id="latestAlbum">
+            <div id="latestAlbumJacketImg">
+                <img class="ja-jp"
+                    src="https://cdn.yoneyo.com/images/yone_albums/moonrise/yone_music_moonrise_jacket_image.png"
+                    alt="Moonrise のジャケット画像">
+                <img class="en-us"
+                    src="https://cdn.yoneyo.com/images/yone_albums/moonrise/yone_music_moonrise_jacket_image.png"
+                    alt="Jacket picture of 'Moonrise'">
+                <img class="ko-kr"
+                    src="https://cdn.yoneyo.com/images/yone_albums/moonrise/yone_music_moonrise_jacket_image.png"
+                    alt="'Moonrise' 재킷 사진">
+            </div>
 
-                #latestAlbumInfo {
-                    align-items: center;
-                    text-align: center;
-                }
-            }
-        </style>
-
-        <!-- Google tag (gtag.js) -->
-        <script
-            async
-            src="https://www.googletagmanager.com/gtag/js?id=G-YE0H1WFLV9"
-        ></script>
-        <script>
-            window.dataLayer = window.dataLayer || [];
-            function gtag() {
-                dataLayer.push(arguments);
-            }
-            gtag("js", new Date());
-
-            gtag("config", "G-YE0H1WFLV9");
-        </script>
-
-        <!-- Scripts -->
-        <script
-            src="https://code.jquery.com/jquery-3.7.1.min.js"
-            integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo="
-            crossorigin="anonymous"
-        ></script>
-
-        <script>
-            const pageTitleLangs = {
-                "ja-JP": "ホーム | よね/Yone Musics",
-                "en-US": "Home | Yone Musics",
-                "ko-KR": "홈 | 요네/Yone Musics",
-            };
-        </script>
-
-        <script src="./scripts/common.js" type="module"></script>
-    </head>
-
-    <body class="ja-jp">
-        <header></header>
-
-        <main>
-            <section id="latestAlbum">
-                <div id="latestAlbumJacketImg">
-                    <img
-                        class="ja-jp"
-                        src="https://cdn.yoneyo.com/images/yone_albums/moonrise/yone_music_moonrise_jacket_image.png"
-                        alt="Moonrise のジャケット画像"
-                    />
-                    <img
-                        class="en-us"
-                        src="https://cdn.yoneyo.com/images/yone_albums/moonrise/yone_music_moonrise_jacket_image.png"
-                        alt="Jacket picture of 'Moonrise'"
-                    />
-                    <img
-                        class="ko-kr"
-                        src="https://cdn.yoneyo.com/images/yone_albums/moonrise/yone_music_moonrise_jacket_image.png"
-                        alt="'Moonrise' 재킷 사진"
-                    />
+            <div id="latestAlbumInfo">
+                <div id="latestAlbumLabel">
+                    <span class="ja-jp">最新リリース</span>
+                    <span class="en-us">Latest Released</span>
+                    <span class="ko-kr">최신 릴리스</span>
                 </div>
 
-                <div id="latestAlbumInfo">
-                    <div id="latestAlbumLabel">
-                        <span class="ja-jp">最新リリース</span>
-                        <span class="en-us">Latest Released</span>
-                        <span class="ko-kr">최신 릴리스</span>
-                    </div>
+                <span id="latestAlbumName">Moonrise</span>
 
-                    <span id="latestAlbumName">Moonrise</span>
+                <a id="latestAlbumMoreButton" class="button" href="./releases/moonrise/">
+                    <span class="ja-jp">開く</span>
+                    <span class="en-us">More</span>
+                    <span class="ko-kr">더보기</span>
+                </a>
+            </div>
+        </section>
+    </main>
 
-                    <a
-                        id="latestAlbumMoreButton"
-                        class="button"
-                        href="./releases/moonrise/"
-                    >
-                        <span class="ja-jp">開く</span>
-                        <span class="en-us">More</span>
-                        <span class="ko-kr">더보기</span>
-                    </a>
-                </div>
-            </section>
-        </main>
+    <footer></footer>
+</body>
 
-        <footer></footer>
-    </body>
 </html>
