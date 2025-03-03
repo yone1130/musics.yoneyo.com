@@ -12,8 +12,9 @@
 <html lang="ja-JP">
 
 <head prefix="og: https://ogp.me/ns#">
-    <!-- Meta -->
     <meta charset="UTF-8">
+
+    <!-- Meta -->
     <title>Wave | よね/Yone Musics</title>
     <meta name="description" content="よね/Yone の楽曲サイトです。">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -26,17 +27,14 @@
     <meta property="og:description" content="よね/Yone の楽曲サイトです。">
     <meta property="og:image" content="https://cdn.yoneyo.com/images/yone_albums/wave/yone_music_wave_jacket_image.png">
 
-    <!-- Base -->
-    <base href="https://musics.yoneyo.com/">
-
     <!-- Manifest -->
-    <link rel="manifest" href="./manifest.json">
+    <link rel="manifest" href="/manifest.json">
 
-    <!-- Icon -->
+    <!-- Icons -->
     <link rel="icon" href="https://cdn.yoneyo.com/images/yone_logos/yone_icon.png" type="image/png">
 
     <!-- Styles -->
-    <link rel="stylesheet" href="./styles/common.css">
+    <link rel="stylesheet" href="/styles/common.css">
 
     <style>
         .sectionTitle {
@@ -195,18 +193,6 @@
         }
     </style>
 
-    <!-- Google tag (gtag.js) -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-YE0H1WFLV9"></script>
-    <script>
-        window.dataLayer = window.dataLayer || [];
-        function gtag() {
-            dataLayer.push(arguments);
-        }
-        gtag("js", new Date());
-
-        gtag("config", "G-YE0H1WFLV9");
-    </script>
-
     <!-- Scripts -->
     <script src="https://code.jquery.com/jquery-3.7.1.min.js"
         integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
@@ -219,7 +205,21 @@
         };
     </script>
 
-    <script src="./scripts/common.js" type="module"></script>
+    <script src="/scripts/common.js" type="module"></script>
+
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-R0572PDB7N"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+
+        gtag('config', 'G-R0572PDB7N');
+    </script>
+
+    <!-- Google AdSense -->
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-4842259448644646"
+        crossorigin="anonymous"></script>
 </head>
 
 <body class="ja-jp">
@@ -261,16 +261,16 @@
                     <p>
                         <span class="ja-jp">
                             ご利用前に
-                            <a href="./license/">楽曲利用ライセンス</a>
+                            <a href="/license/">楽曲利用ライセンス</a>
                             をお読みください。
                         </span>
                         <span class="en-us">
                             Please read the
-                            <a href="./license/">License to Use Music</a>.
+                            <a href="/license/">License to Use Music</a>.
                         </span>
                         <span class="ko-kr">
                             이용 시에는
-                            <a href="./license/">음악 이용 라이센스</a> 를
+                            <a href="/license/">음악 이용 라이센스</a> 를
                             읽어보시기 바랍니다.
                         </span>
                     </p>
