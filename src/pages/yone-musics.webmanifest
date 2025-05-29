@@ -10,7 +10,7 @@
     "display": "standalone",
     "icons": [
         {
-            "src": "https://cdn.yoneyo.com/images/yone_logos/yone_icon.png",
+            "src": "https://cdn.yoneyo.com/images/yone-logos/yone_icon.png",
             "type": "image/png",
             "sizes": "1200x1200"
         }
