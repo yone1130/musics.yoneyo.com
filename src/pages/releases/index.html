@@ -1,4 +1,4 @@
-<!--
+<!--!
 
     Yone Musics Website
 
@@ -15,7 +15,7 @@
     <meta charset="UTF-8">
 
     <!-- Meta -->
-    <title>Musics List | よね/Yone Musics</title>
+    <title>楽曲一覧 | よね/Yone Musics</title>
     <meta name="description" content="よね/Yone の楽曲一覧">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="google-adsense-account" content="ca-pub-4842259448644646">
@@ -24,7 +24,7 @@
     <meta property="og:url" content="https://musics.yoneyo.com/releases/">
     <meta property="og:type" content="website">
     <meta property="og:site_name" content="よね/Yone Musics">
-    <meta property="og:title" content="Musics List">
+    <meta property="og:title" content="楽曲一覧">
     <meta property="og:description" content="よね/Yone の楽曲一覧">
     <meta property="og:image" content="https://cdn.yoneyo.com/images/yone_logos/yone_icon.png">
 
@@ -33,6 +33,13 @@
 
     <!-- Icons -->
     <link rel="icon" href="https://cdn.yoneyo.com/images/yone_logos/yone_icon.png" type="image/png">
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0&icon_names=close,language,menu">
 
     <!-- Styles -->
     <link rel="stylesheet" href="/styles/common.css">
@@ -136,7 +143,7 @@
         };
     </script>
 
-    <script src="/scripts/common.mjs" type="module"></script>
+    <script src="/scripts/common.js" type="module"></script>
 
     <!-- Google tag (gtag.js) -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=GT-NSSSF3F3"></script>
@@ -159,22 +166,22 @@
     <main>
         <section id="releases">
             <h2 id="pageTitle">
-                <span class="ja-jp">楽曲一覧</span>
-                <span class="en-us">Musics List</span>
-                <span class="ko-kr">음악 목록</span>
+                <span lang="ja-JP" class="ja-jp">楽曲一覧</span>
+                <span lang="en-US" class="en-us">Musics List</span>
+                <span lang="ko-KR" class="ko-kr">음악 목록</span>
             </h2>
 
             <ul id="releasesLists">
                 <li>
                     <a href="/releases/wave/">
                         <div class="albumJacketImg">
-                            <img class="ja-jp"
+                            <img lang="ja-JP" class="ja-jp"
                                 src="https://cdn.yoneyo.com/images/yone_albums/wave/yone_music_wave_jacket_image.png"
                                 alt="Wave のジャケット画像">
-                            <img class="en-us"
+                            <img lang="en-US" class="en-us"
                                 src="https://cdn.yoneyo.com/images/yone_albums/wave/yone_music_wave_jacket_image.png"
                                 alt="Jacket picture of 'Wave'">
-                            <img class="ko-kr"
+                            <img lang="ko-KR" class="ko-kr"
                                 src="https://cdn.yoneyo.com/images/yone_albums/wave/yone_music_wave_jacket_image.png"
                                 alt="'Wave' 재킷 사진">
                         </div>
@@ -182,15 +189,15 @@
                         <div class="info">
                             <div class="title">Wave</div>
                             <div class="date">
-                                <span class="ja-jp">リリース日: 2024/6/28</span>
-                                <span class="en-us">Released on: June 28, 2024</span>
-                                <span class="ko-kr">출시일: 2024/6/28</span>
+                                <span lang="ja-JP" class="ja-jp">リリース日: 2024/6/28</span>
+                                <span lang="en-US" class="en-us">Released on: June 28, 2024</span>
+                                <span lang="ko-KR" class="ko-kr">출시일: 2024/6/28</span>
                             </div>
                             <div class="tags">
                                 <div class="tag usable">
-                                    <span class="ja-jp">利用可</span>
-                                    <span class="en-us">Usable</span>
-                                    <span class="ko-kr">이용 가능</span>
+                                    <span lang="ja-JP" class="ja-jp">利用可</span>
+                                    <span lang="en-US" class="en-us">Usable</span>
+                                    <span lang="ko-KR" class="ko-kr">이용 가능</span>
                                 </div>
                             </div>
                         </div>
@@ -200,13 +207,13 @@
                 <li>
                     <a href="/releases/eternal-days/">
                         <div class="albumJacketImg">
-                            <img class="ja-jp"
+                            <img lang="ja-JP" class="ja-jp"
                                 src="https://cdn.yoneyo.com/images/yone_albums/eternal-days/yone_music_eternal_days_jacket_image.png"
                                 alt="Eternal Days のジャケット画像">
-                            <img class="en-us"
+                            <img lang="en-US" class="en-us"
                                 src="https://cdn.yoneyo.com/images/yone_albums/eternal-days/yone_music_eternal_days_jacket_image.png"
                                 alt="Jacket picture of 'Eternal Days'">
-                            <img class="ko-kr"
+                            <img lang="ko-KR" class="ko-kr"
                                 src="https://cdn.yoneyo.com/images/yone_albums/eternal-days/yone_music_eternal_days_jacket_image.png"
                                 alt="'Eternal Days' 재킷 사진">
                         </div>
@@ -214,15 +221,15 @@
                         <div class="info">
                             <div class="title">Eternal Days</div>
                             <div class="date">
-                                <span class="ja-jp">リリース日: 2024/6/21</span>
-                                <span class="en-us">Released on: June 21, 2024</span>
-                                <span class="ko-kr">출시일: 2024/6/21</span>
+                                <span lang="ja-JP" class="ja-jp">リリース日: 2024/6/21</span>
+                                <span lang="en-US" class="en-us">Released on: June 21, 2024</span>
+                                <span lang="ko-KR" class="ko-kr">출시일: 2024/6/21</span>
                             </div>
                             <div class="tags">
                                 <div class="tag usable">
-                                    <span class="ja-jp">利用可</span>
-                                    <span class="en-us">Usable</span>
-                                    <span class="ko-kr">이용 가능</span>
+                                    <span lang="ja-JP" class="ja-jp">利用可</span>
+                                    <span lang="en-US" class="en-us">Usable</span>
+                                    <span lang="ko-KR" class="ko-kr">이용 가능</span>
                                 </div>
                             </div>
                         </div>
@@ -232,13 +239,13 @@
                 <li>
                     <a href="/releases/stable/">
                         <div class="albumJacketImg">
-                            <img class="ja-jp"
+                            <img lang="ja-JP" class="ja-jp"
                                 src="https://cdn.yoneyo.com/images/yone_albums/stable/yone_music_stable_jacket_image.png"
                                 alt="Stable のジャケット画像">
-                            <img class="en-us"
+                            <img lang="en-US" class="en-us"
                                 src="https://cdn.yoneyo.com/images/yone_albums/stable/yone_music_stable_jacket_image.png"
                                 alt="Jacket picture of 'Stable'">
-                            <img class="ko-kr"
+                            <img lang="ko-KR" class="ko-kr"
                                 src="https://cdn.yoneyo.com/images/yone_albums/stable/yone_music_stable_jacket_image.png"
                                 alt="'Stable' 재킷 사진">
                         </div>
@@ -246,15 +253,15 @@
                         <div class="info">
                             <div class="title">Stable</div>
                             <div class="date">
-                                <span class="ja-jp">リリース日: 2024/6/21</span>
-                                <span class="en-us">Released on: June 21, 2024</span>
-                                <span class="ko-kr">출시일: 2024/6/21</span>
+                                <span lang="ja-JP" class="ja-jp">リリース日: 2024/6/21</span>
+                                <span lang="en-US" class="en-us">Released on: June 21, 2024</span>
+                                <span lang="ko-KR" class="ko-kr">출시일: 2024/6/21</span>
                             </div>
                             <div class="tags">
                                 <div class="tag usable">
-                                    <span class="ja-jp">利用可</span>
-                                    <span class="en-us">Usable</span>
-                                    <span class="ko-kr">이용 가능</span>
+                                    <span lang="ja-JP" class="ja-jp">利用可</span>
+                                    <span lang="en-US" class="en-us">Usable</span>
+                                    <span lang="ko-KR" class="ko-kr">이용 가능</span>
                                 </div>
                             </div>
                         </div>
@@ -264,13 +271,13 @@
                 <li>
                     <a href="/releases/upcoming/">
                         <div class="albumJacketImg">
-                            <img class="ja-jp"
+                            <img lang="ja-JP" class="ja-jp"
                                 src="https://cdn.yoneyo.com/images/yone_albums/upcoming/yone_music_upcoming_jacket_image.png"
                                 alt="Upcoming のジャケット画像">
-                            <img class="en-us"
+                            <img lang="en-US" class="en-us"
                                 src="https://cdn.yoneyo.com/images/yone_albums/upcoming/yone_music_upcoming_jacket_image.png"
                                 alt="Jacket picture of 'Upcoming'">
-                            <img class="ko-kr"
+                            <img lang="ko-KR" class="ko-kr"
                                 src="https://cdn.yoneyo.com/images/yone_albums/upcoming/yone_music_upcoming_jacket_image.png"
                                 alt="'Upcoming' 재킷 사진">
                         </div>
@@ -278,15 +285,15 @@
                         <div class="info">
                             <div class="title">Upcoming</div>
                             <div class="date">
-                                <span class="ja-jp">リリース日: 2024/6/21</span>
-                                <span class="en-us">Released on: June 21, 2024</span>
-                                <span class="ko-kr">출시일: 2024/6/21</span>
+                                <span lang="ja-JP" class="ja-jp">リリース日: 2024/6/21</span>
+                                <span lang="en-US" class="en-us">Released on: June 21, 2024</span>
+                                <span lang="ko-KR" class="ko-kr">출시일: 2024/6/21</span>
                             </div>
                             <div class="tags">
                                 <div class="tag usable">
-                                    <span class="ja-jp">利用可</span>
-                                    <span class="en-us">Usable</span>
-                                    <span class="ko-kr">이용 가능</span>
+                                    <span lang="ja-JP" class="ja-jp">利用可</span>
+                                    <span lang="en-US" class="en-us">Usable</span>
+                                    <span lang="ko-KR" class="ko-kr">이용 가능</span>
                                 </div>
                             </div>
                         </div>
@@ -296,13 +303,13 @@
                 <li>
                     <a href="/releases/moonrise/">
                         <div class="albumJacketImg">
-                            <img class="ja-jp"
+                            <img lang="ja-JP" class="ja-jp"
                                 src="https://cdn.yoneyo.com/images/yone_albums/moonrise/yone_music_moonrise_jacket_image.png"
                                 alt="Moonrise のジャケット画像">
-                            <img class="en-us"
+                            <img lang="en-US" class="en-us"
                                 src="https://cdn.yoneyo.com/images/yone_albums/moonrise/yone_music_moonrise_jacket_image.png"
                                 alt="Jacket picture of 'Moonrise'">
-                            <img class="ko-kr"
+                            <img lang="ko-KR" class="ko-kr"
                                 src="https://cdn.yoneyo.com/images/yone_albums/moonrise/yone_music_moonrise_jacket_image.png"
                                 alt="'Moonrise' 재킷 사진">
                         </div>
@@ -310,15 +317,15 @@
                         <div class="info">
                             <div class="title">Moonrise</div>
                             <div class="date">
-                                <span class="ja-jp">リリース日: 2024/3/29</span>
-                                <span class="en-us">Released on: Mar. 29, 2024</span>
-                                <span class="ko-kr">출시일: 2024/3/29</span>
+                                <span lang="ja-JP" class="ja-jp">リリース日: 2024/3/29</span>
+                                <span lang="en-US" class="en-us">Released on: Mar. 29, 2024</span>
+                                <span lang="ko-KR" class="ko-kr">출시일: 2024/3/29</span>
                             </div>
                             <div class="tags">
                                 <div class="tag usable">
-                                    <span class="ja-jp">利用可</span>
-                                    <span class="en-us">Usable</span>
-                                    <span class="ko-kr">이용 가능</span>
+                                    <span lang="ja-JP" class="ja-jp">利用可</span>
+                                    <span lang="en-US" class="en-us">Usable</span>
+                                    <span lang="ko-KR" class="ko-kr">이용 가능</span>
                                 </div>
                             </div>
                         </div>
@@ -328,13 +335,13 @@
                 <li>
                     <a href="/releases/the-beginning/">
                         <div class="albumJacketImg">
-                            <img class="ja-jp"
+                            <img lang="ja-JP" class="ja-jp"
                                 src="https://cdn.yoneyo.com/images/yone-albums/the-beginning/yone_music_the_beginning_jacket_image.png"
                                 alt="The Beginning のジャケット画像">
-                            <img class="en-us"
+                            <img lang="en-US" class="en-us"
                                 src="https://cdn.yoneyo.com/images/yone-albums/the-beginning/yone_music_the_beginning_jacket_image.png"
                                 alt="Jacket picture of 'The Beginning'">
-                            <img class="ko-kr"
+                            <img lang="ko-KR" class="ko-kr"
                                 src="https://cdn.yoneyo.com/images/yone-albums/the-beginning/yone_music_the_beginning_jacket_image.png"
                                 alt="'The Beginning' 재킷 사진">
                         </div>
@@ -342,15 +349,15 @@
                         <div class="info">
                             <div class="title">The Beginning</div>
                             <div class="date">
-                                <span class="ja-jp">リリース日: 2023/12/15</span>
-                                <span class="en-us">Released on: Dec. 15, 2023</span>
-                                <span class="ko-kr">출시일: 2023/12/15</span>
+                                <span lang="ja-JP" class="ja-jp">リリース日: 2023/12/15</span>
+                                <span lang="en-US" class="en-us">Released on: Dec. 15, 2023</span>
+                                <span lang="ko-KR" class="ko-kr">출시일: 2023/12/15</span>
                             </div>
                             <div class="tags">
                                 <div class="tag usable">
-                                    <span class="ja-jp">利用可</span>
-                                    <span class="en-us">Usable</span>
-                                    <span class="ko-kr">이용 가능</span>
+                                    <span lang="ja-JP" class="ja-jp">利用可</span>
+                                    <span lang="en-US" class="en-us">Usable</span>
+                                    <span lang="ko-KR" class="ko-kr">이용 가능</span>
                                 </div>
                             </div>
                         </div>

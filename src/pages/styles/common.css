@@ -1,6 +1,6 @@
 @charset "UTF-8";
 
-/*
+/*!
 
     Yone Musics Website
 
@@ -11,12 +11,16 @@
 
 */
 
-@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+JP&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200");
-@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap");
+@font-face {
+    font-family: "Local Noto Sans JP";
+    src: local("Noto Sans JP");
+}
 
 :root {
-    --page-font-size: 14px;
+    --font-family: "Local Noto Sans JP", "Noto Sans JP", sans-serif;
+    --font-size: 14px;
+    --font-weight: 400;
+
     --body-bgcolor: #ffffffff;
     --body-color: #404040ff;
     --header-height: 7rem;
@@ -35,73 +39,85 @@
     --footer-height: 6rem;
     --footer-bgcolor: #303030ff;
 
+    /* z-index */
     --header-zindex: 10;
     --header-langs-menu-zindex: 20;
     --header-nav-zindex: 30;
     --footer-zindex: 10;
+
+    font-size: var(--font-size);
+    font-weight: var(--font-weight);
+
+    /* lefacy */
+    --page-font-size: var(--font-size);
 }
 
-* {
+body {
     margin: 0;
     padding: 0;
-}
-
-html,
-body {
-    font-size: var(--page-font-size);
-}
-
-body {
     margin-top: var(--header-height);
+
     background-color: var(--body-bgcolor);
-    font-family: "Noto Sans JP", sans-serif;
-    font-weight: 400;
+    font-family: var(--font-family);
+    font-size: var(--font-size);
+    font-weight: var(--font-weight);
     color: var(--body-color);
-}
 
-body *.ja-jp,
-body *.en-us,
-body *.ko-kr {
-    display: none;
-}
+    & * {
+        margin: 0;
+        padding: 0;
 
-body.ja-jp *.ja-jp {
-    display: block;
-}
+        &.ja-jp,
+        &.en-us,
+        &.ko-kr {
+            display: none;
+        }
+    }
 
-body.en-us *.en-us {
-    display: block;
-}
+    &.ja-jp {
+        & *.ja-jp {
+            display: block;
+        }
 
-body.ko-kr *.ko-kr {
-    display: block;
-}
+        & *.inline.ja-jp {
+            display: inline;
+        }
 
-body.ja-jp *.inline.ja-jp {
-    display: inline;
-}
+        & #headerLangsLists>.ja-jp {
+            background-color: #000000d0;
+            color: #ffffffff;
+        }
+    }
 
-body.en-us *.inline.en-us {
-    display: inline;
-}
+    &.en-us {
+        & *.en-us {
+            display: block;
+        }
 
-body.ko-kr *.inline.ko-kr {
-    display: inline;
-}
+        & *.inline.en-us {
+            display: inline;
+        }
 
-body.ja-jp #headerLangsLists>.ja-jp {
-    background-color: #000000d0;
-    color: #ffffffff;
-}
+        & #headerLangsLists>.en-us {
+            background-color: #000000d0;
+            color: #ffffffff;
+        }
+    }
 
-body.en-us #headerLangsLists>.en-us {
-    background-color: #000000d0;
-    color: #ffffffff;
-}
+    &.ko-kr {
+        & *.ko-kr {
+            display: block;
+        }
 
-body.ko-kr #headerLangsLists>.ko-kr {
-    background-color: #000000d0;
-    color: #ffffffff;
+        & *.inline.ko-kr {
+            display: inline;
+        }
+
+        & #headerLangsLists>.ko-kr {
+            background-color: #000000d0;
+            color: #ffffffff;
+        }
+    }
 }
 
 h1,
@@ -137,7 +153,7 @@ button {
     font-size: 1.2rem;
     text-decoration: none;
     color: #ffffffff;
-    transition: all 0.3s;
+    transition: background-color 0.3s;
     user-select: none;
 }
 
@@ -226,7 +242,7 @@ header {
     border-radius: 0.625rem;
     background-color: #e8e8e8ff;
     font-size: calc(var(--header-logo-height) * 0.15);
-    transition: all 0.3s;
+    transition: background-color 0.3s, color 0.3s;
 }
 
 #headerLangsButton.opened {
@@ -269,7 +285,7 @@ header {
     width: 10rem;
     height: 100%;
     border-right: 1px solid #808080ff;
-    transition: all 0.3s;
+    transition: background-color 0.3s;
 }
 
 #headerNavLists>li:hover {
@@ -325,7 +341,7 @@ header {
     width: 100vw;
     height: calc(100vh - var(--header-logo-height));
     background-color: #e0e0e0ff;
-    transition: all 0.3s;
+    transition: top 0.3s;
     z-index: var(--header-langs-menu-zindex);
 }
 
@@ -355,7 +371,7 @@ header {
     margin-bottom: 1rem;
     border: none;
     border-radius: 1rem;
-    transition: all 0.3s;
+    transition: background-color 0.3s;
 }
 
 #headerLangsLists>li:hover {
@@ -410,7 +426,7 @@ footer>.wrapper {
         width: 100vw;
         height: calc(100vh - var(--header-logo-height));
         background-color: #000000ff;
-        transition: all 0.3s;
+        transition: left 0.3s;
         z-index: var(--header-nav-zindex);
     }
 

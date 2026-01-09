@@ -1,4 +1,4 @@
-<!--
+<!--!
 
     Yone Musics Website
 
@@ -15,7 +15,7 @@
     <meta charset="UTF-8">
 
     <!-- Meta -->
-    <title>よね/Yone Musics</title>
+    <title>ホーム | よね/Yone Musics</title>
     <meta name="description" content="よね/Yone の楽曲サイトです。">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="google-adsense-account" content="ca-pub-4842259448644646">
@@ -24,7 +24,7 @@
     <meta property="og:url" content="https://musics.yoneyo.com/">
     <meta property="og:type" content="website">
     <meta property="og:site_name" content="よね/Yone Musics">
-    <meta property="og:title" content="Home">
+    <meta property="og:title" content="ホーム">
     <meta property="og:description" content="よね/Yone の楽曲サイトです。">
     <meta property="og:image" content="https://cdn.yoneyo.com/images/yone_logos/yone_icon.png">
 
@@ -33,6 +33,13 @@
 
     <!-- Icons -->
     <link rel="icon" href="https://cdn.yoneyo.com/images/yone_logos/yone_icon.png" type="image/png">
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0&icon_names=close,language,menu">
 
     <!-- Styles -->
     <link rel="stylesheet" href="/styles/common.css">
@@ -125,7 +132,7 @@
         };
     </script>
 
-    <script src="/scripts/common.mjs" type="module"></script>
+    <script src="/scripts/common.js" type="module"></script>
 
     <!-- Google tag (gtag.js) -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=GT-NSSSF3F3"></script>
@@ -148,27 +155,30 @@
     <main>
         <section id="latestAlbum">
             <div id="latestAlbumJacketImg">
-                <img class="ja-jp" src="https://cdn.yoneyo.com/images/yone_albums/wave/yone_music_wave_jacket_image.png"
+                <img lang="ja-JP" class="ja-jp"
+                    src="https://cdn.yoneyo.com/images/yone_albums/wave/yone_music_wave_jacket_image.png"
                     alt="Wave のジャケット画像">
-                <img class="en-us" src="https://cdn.yoneyo.com/images/yone_albums/wave/yone_music_wave_jacket_image.png"
+                <img lang="en-US" class="en-us"
+                    src="https://cdn.yoneyo.com/images/yone_albums/wave/yone_music_wave_jacket_image.png"
                     alt="Jacket picture of 'Wave'">
-                <img class="ko-kr" src="https://cdn.yoneyo.com/images/yone_albums/wave/yone_music_wave_jacket_image.png"
+                <img lang="ko-KR" class="ko-kr"
+                    src="https://cdn.yoneyo.com/images/yone_albums/wave/yone_music_wave_jacket_image.png"
                     alt="'Wave' 재킷 사진">
             </div>
 
             <div id="latestAlbumInfo">
                 <div id="latestAlbumLabel">
-                    <span class="ja-jp">最新リリース</span>
-                    <span class="en-us">Latest Released</span>
-                    <span class="ko-kr">최신 릴리스</span>
+                    <span lang="ja-JP" class="ja-jp">最新リリース</span>
+                    <span lang="en-US" class="en-us">Latest Released</span>
+                    <span lang="ko-KR" class="ko-kr">최신 릴리스</span>
                 </div>
 
                 <span id="latestAlbumName">Wave</span>
 
                 <a id="latestAlbumMoreButton" class="button" href="/releases/wave/">
-                    <span class="ja-jp">開く</span>
-                    <span class="en-us">More</span>
-                    <span class="ko-kr">더보기</span>
+                    <span lang="ja-JP" class="ja-jp">開く</span>
+                    <span lang="en-US" class="en-us">More</span>
+                    <span lang="ko-KR" class="ko-kr">더보기</span>
                 </a>
             </div>
         </section>

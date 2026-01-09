@@ -1,4 +1,4 @@
-/*
+/*!
  *
  * Yone Musics Website
  *
@@ -9,19 +9,33 @@
  *
  */
 
-
 class Page {
-    get langs() {
+    /**
+     * @param {{ pageTitleLangs: Object<string, string> }}
+     */
+    constructor({ pageTitleLangs }) {
+        this.#pageTitleLangs = pageTitleLangs;
+    }
+
+    /**
+     * @returns {Promise<void>}
+     */
+    async initialize() {
+        this.#getClientLang();
+        this.#changePageLang(this.pageLang);
+        this.#initPage();
+    }
+
+    get #langs() {
         return ["ja-jp", "en-us", "ko-kr"];
     }
 
-    constructor() {
-        this.getClientLang();
-        this.changePageLang(this.pageLang);
-        this.initPage();
-    }
+    /**
+     * @type {Object<string, string>}
+     */
+    #pageTitleLangs = {};
 
-    getClientLang() {
+    #getClientLang() {
         const langsMap = {
             ja: "ja-jp",
             en: "en-us",
@@ -45,43 +59,43 @@ class Page {
         localStorage.setItem("lang", this.pageLang);
     }
 
-    changePageLang(lang) {
+    #changePageLang(lang) {
         switch (lang) {
             case "ja-jp":
                 document.documentElement.lang = "ja-JP";
-                document.title = pageTitleLangs["ja-JP"];
-                document.body.classList.remove(...this.langs);
+                document.title = this.#pageTitleLangs["ja-JP"];
+                document.body.classList.remove(...this.#langs);
                 document.body.classList.add("ja-jp");
                 localStorage.setItem("lang", "ja-jp");
                 break;
 
             case "en-us":
                 document.documentElement.lang = "en-US";
-                document.title = pageTitleLangs["en-US"];
-                document.body.classList.remove(...this.langs);
+                document.title = this.#pageTitleLangs["en-US"];
+                document.body.classList.remove(...this.#langs);
                 document.body.classList.add("en-us");
                 localStorage.setItem("lang", "en-us");
                 break;
 
             case "ko-kr":
                 document.documentElement.lang = "ko-KR";
-                document.title = pageTitleLangs["ko-KR"];
-                document.body.classList.remove(...this.langs);
+                document.title = this.#pageTitleLangs["ko-KR"];
+                document.body.classList.remove(...this.#langs);
                 document.body.classList.add("ko-kr");
                 localStorage.setItem("lang", "ko-kr");
                 break;
 
             default:
                 document.documentElement.lang = "en-US";
-                document.title = pageTitleLangs["en-US"];
-                document.body.classList.remove(...this.langs);
+                document.title = this.#pageTitleLangs["en-US"];
+                document.body.classList.remove(...this.#langs);
                 document.body.classList.add("en-us");
                 localStorage.setItem("lang", "en-us");
                 break;
         }
     }
 
-    initPage() {
+    #initPage() {
         $("header").load("/components/header.html");
         $("footer").load("/components/footer.html");
 
@@ -95,9 +109,9 @@ class Page {
             $("#headerLangsMenu").toggleClass("opened");
         });
 
-        this.langs.forEach((lang) => {
+        this.#langs.forEach((lang) => {
             $(document).on("click", `#headerLangsLists .${lang}`, () => {
-                this.changePageLang(lang);
+                this.#changePageLang(lang);
                 $("#headerLangsButton").toggleClass("opened");
                 $("#headerLangsMenu").toggleClass("opened");
             });
@@ -118,5 +132,14 @@ class Page {
     }
 };
 
+/**
+ * @type {Object<string, string>}
+ */
+const _pageTitleLangs = window.pageTitleLangs ?? pageTitleLangs;
 
-new Page();
+/**
+ * @type {Page}
+ */
+const page = new Page({ pageTitleLangs: _pageTitleLangs });
+
+await page.initialize();

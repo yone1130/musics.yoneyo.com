@@ -1,6 +1,6 @@
 # Yone Musics Website
 
-[→ 日本語](./README_JP.md)
+[日本語で読む >](./README_JP.md)
 
 ## Overview
 
@@ -14,6 +14,6 @@ Deploy directory `src/pages/`.
 
 ## License
 
-No licensed.
+This project is not licensed.
 
-Copyright &copy; よね/Yone
+Copyright © よね/Yone
