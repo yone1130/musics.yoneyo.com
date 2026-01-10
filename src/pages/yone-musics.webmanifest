@@ -2,7 +2,7 @@
     "manifest_version": "",
     "name": "よね/Yone Musics",
     "short_name": "Yone-Musics",
-    "description": "",
+    "description": "よね/Yone の楽曲ウェブサイトです。",
     "scope": "/",
     "start_url": "/index.html",
     "theme_color": "#40e040ff",
