@@ -180,9 +180,9 @@ class Page {
                         </div>
 
                         <div id="headerTitle">
-                            <h1 lang="ja-JP" class="ja-jp">よね/Yone Musics</h1>
-                            <h1 lang="en-US" class="en-us">Yone Musics</h1>
-                            <h1 lang="ko-KR" class="ko-kr">요네/Yone Musics</h1>
+                            <h2 lang="ja-JP" class="ja-jp">よね/Yone Musics</h2>
+                            <h2 lang="en-US" class="en-us">Yone Musics</h2>
+                            <h2 lang="ko-KR" class="ko-kr">요네/Yone Musics</h2>
                         </div>
                     </div>
 
