@@ -1,12 +1,12 @@
 {
-    "manifest_version": "",
+    "manifest_version": "3",
     "name": "よね/Yone Musics",
     "short_name": "Yone-Musics",
     "description": "よね/Yone の楽曲ウェブサイトです。",
     "scope": "/",
-    "start_url": "/index.html",
-    "theme_color": "#40e040ff",
-    "background_color": "#ffffffff",
+    "start_url": "/",
+    "theme_color": "#40e040",
+    "background_color": "#ffffff",
     "display": "standalone",
     "icons": [
         {
